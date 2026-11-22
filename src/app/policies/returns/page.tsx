@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { COMPANY } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Returns & Claims Policy | Asian Enterprises B2B Industrial Supply',
-  description: 'Procedures for transit damages, discrepancy reporting, and material inspection claims with Asian Enterprises.',
+  title: 'Returns & Claims Policy | Gurudev Enterprise B2B Industrial Supply',
+  description: 'Procedures for transit damages, discrepancy reporting, and material inspection claims with Gurudev Enterprise.',
 };
 
 export default function ReturnsPolicyPage() {
@@ -14,7 +14,7 @@ export default function ReturnsPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B]">Home</Link>
+            <Link href="/" className="hover:text-[#102B46]">Home</Link>
             <span>/</span>
             <span className="text-slate-900 font-semibold">Returns & Claims</span>
           </nav>
@@ -33,14 +33,14 @@ export default function ReturnsPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-sm font-bold text-slate-900">2. Inspection on Receipt & Notice Window</h2>
             <p>
-              The consignee must inspect incoming shipments at the time of delivery. Any physical packaging damage, shortage against the lorry receipt (LR), or apparent defect must be endorsed on the carrier delivery docket. Notice of discrepancies or manufacturing defects must be submitted in writing to Asian Enterprises within <strong>48 hours of physical receipt</strong> accompanied by photographs and consignment details.
+              The consignee must inspect incoming shipments at the time of delivery. Any physical packaging damage, shortage against the lorry receipt (LR), or apparent defect must be endorsed on the carrier delivery docket. Notice of discrepancies or manufacturing defects must be submitted in writing to Gurudev Enterprise within <strong>48 hours of physical receipt</strong> accompanied by photographs and consignment details.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-sm font-bold text-slate-900">3. Manufacturer Warranty & Defect Claims</h2>
             <p>
-              Equipment supplied by Asian Enterprises carries standard manufacturer warranties where applicable. For products confirmed to contain manufacturing defects within the warranty period, Asian Enterprises facilitates replacement or repair through the manufacturer or authorized warranty channels.
+              Equipment supplied by Gurudev Enterprise carries standard manufacturer warranties where applicable. For products confirmed to contain manufacturing defects within the warranty period, Gurudev Enterprise facilitates replacement or repair through the manufacturer or authorized warranty channels.
             </p>
           </section>
 

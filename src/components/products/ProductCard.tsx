@@ -20,7 +20,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const whatsappUrl = `https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Asian Enterprises, I require a quotation for: ${product.name} (Ref: ${product.slug}). Quantity: 1 ${product.packagingUnit}. Delivery City: `)}`;
+  const whatsappUrl = `https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Gurudev Enterprise, I require a quotation for: ${product.name} (Ref: ${product.slug}). Quantity: 1 ${product.packagingUnit}. Delivery City: `)}`;
 
   return (
     <div className="bg-white rounded-lg border border-slate-200 overflow-hidden shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
@@ -38,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
           {/* Badges */}
           <div className="absolute top-2.5 left-2.5 flex flex-col gap-1">
-            <span className="text-[10px] font-semibold bg-[#0B2D5B] text-white px-2 py-0.5 rounded shadow-xs">
+            <span className="text-[10px] font-semibold bg-[#102B46] text-white px-2 py-0.5 rounded shadow-xs">
               {product.categoryName.split('&')[0].trim()}
             </span>
             {product.isFastMoving && (
@@ -53,7 +53,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Product Details */}
         <div className="p-4">
           <Link href={`/products/${product.slug}`}>
-            <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#0B2D5B] transition-colors leading-snug line-clamp-2">
+            <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#102B46] transition-colors leading-snug line-clamp-2">
               {product.name}
             </h3>
           </Link>
@@ -89,7 +89,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="grid grid-cols-2 gap-2">
           <Link
             href={`/rfq?product=${encodeURIComponent(product.name)}&category=${encodeURIComponent(product.categoryName)}`}
-            className="w-full py-2 bg-[#F05A28] hover:bg-[#D94819] text-white text-xs font-bold uppercase tracking-wider rounded text-center transition-colors shadow-xs"
+            className="w-full py-2 bg-[#F28C28] hover:bg-[#D9771E] text-white text-xs font-bold uppercase tracking-wider rounded text-center transition-colors shadow-xs"
           >
             Quote RFQ
           </Link>
@@ -107,7 +107,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <Link
           href={`/products/${product.slug}`}
-          className="w-full block text-center text-[11px] font-semibold text-slate-500 hover:text-[#0B2D5B] transition-colors pt-1"
+          className="w-full block text-center text-[11px] font-semibold text-slate-500 hover:text-[#102B46] transition-colors pt-1"
         >
           View Technical Specifications &rarr;
         </Link>

@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       inquiryId: lead.id,
-      message: 'Thank you for reaching out to Asian Enterprises. A member of our commercial team will contact you shortly.'
+      message: 'Thank you for reaching out to Gurudev Enterprise. A member of our commercial team will contact you shortly.'
     });
   } catch (error: any) {
     console.error('Contact form error:', error);

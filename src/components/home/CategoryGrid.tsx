@@ -11,7 +11,7 @@ export default function CategoryGrid() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F05A28] uppercase tracking-wider mb-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F28C28] uppercase tracking-wider mb-2">
               <Layers className="w-3.5 h-3.5" />
               <span>Multi-Category Industrial Supply</span>
             </div>
@@ -26,7 +26,7 @@ export default function CategoryGrid() {
           <div className="shrink-0 flex items-center gap-3">
             <Link
               href="/products"
-              className="text-xs font-bold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1.5 transition-colors group"
+              className="text-xs font-bold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1.5 transition-colors group"
             >
               <span>Explore Complete Catalogue</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -52,7 +52,7 @@ export default function CategoryGrid() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-3 left-3 right-3 text-white">
-                  <span className="text-[10px] font-mono uppercase bg-[#0B2D5B]/90 text-blue-200 px-2 py-0.5 rounded backdrop-blur-xs">
+                  <span className="text-[10px] font-mono uppercase bg-[#102B46]/90 text-blue-200 px-2 py-0.5 rounded backdrop-blur-xs">
                     Category {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
                   </span>
                 </div>
@@ -61,7 +61,7 @@ export default function CategoryGrid() {
               {/* Category Content */}
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#0B2D5B] transition-colors leading-snug line-clamp-1">
+                  <h3 className="font-bold text-slate-900 text-sm group-hover:text-[#102B46] transition-colors leading-snug line-clamp-1">
                     {cat.title}
                   </h3>
                   <p className="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed">
@@ -90,7 +90,7 @@ export default function CategoryGrid() {
                 <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                   <Link
                     href={`/categories/${cat.slug}`}
-                    className="font-semibold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1 group-hover:underline"
+                    className="font-semibold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1 group-hover:underline"
                   >
                     <span>View Products</span>
                     <ArrowRight className="w-3 h-3" />
@@ -98,7 +98,7 @@ export default function CategoryGrid() {
 
                   <Link
                     href={`/rfq?category=${cat.slug}`}
-                    className="text-[11px] font-medium text-slate-500 hover:text-[#F05A28] transition-colors"
+                    className="text-[11px] font-medium text-slate-500 hover:text-[#F28C28] transition-colors"
                   >
                     Request Quote &rarr;
                   </Link>
@@ -111,7 +111,7 @@ export default function CategoryGrid() {
         {/* Bottom Banner inside Categories */}
         <div className="mt-12 bg-white rounded-lg p-6 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-lg bg-orange-100 text-[#F05A28] flex items-center justify-center shrink-0">
+            <div className="w-12 h-12 rounded-lg bg-orange-100 text-[#F28C28] flex items-center justify-center shrink-0">
               <FileText className="w-6 h-6" />
             </div>
             <div>
@@ -125,7 +125,7 @@ export default function CategoryGrid() {
           </div>
           <Link
             href="/boq-upload"
-            className="shrink-0 px-4 py-2.5 bg-[#0B2D5B] hover:bg-blue-900 text-white text-xs font-bold rounded-md uppercase tracking-wider transition-colors"
+            className="shrink-0 px-4 py-2.5 bg-[#102B46] hover:bg-blue-900 text-white text-xs font-bold rounded-md uppercase tracking-wider transition-colors"
           >
             Upload Complete BOQ
           </Link>

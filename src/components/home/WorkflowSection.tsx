@@ -22,7 +22,7 @@ export default function WorkflowSection() {
     {
       number: "02",
       title: "Supplier Sourcing",
-      desc: "Our procurement desks in Bengaluru and Jaipur coordinate with verified manufacturers and distributors to confirm stock, specs, and volume pricing.",
+      desc: "Our procurement desk in Bengaluru coordinates with verified manufacturers and distributors to confirm stock, specs, and volume pricing.",
       icon: Search,
       action: "Multi-vendor check",
       link: "/about"
@@ -38,7 +38,7 @@ export default function WorkflowSection() {
     {
       number: "04",
       title: "Order Fulfilment",
-      desc: "Upon commercial approval, Asian Enterprises coordinates procurement, pre-dispatch quality verification, transit packaging, and pan-India dispatch.",
+      desc: "Upon commercial approval, Gurudev Enterprise coordinates procurement, pre-dispatch quality verification, transit packaging, and pan-India dispatch.",
       icon: Truck,
       action: "Dispatch coordination",
       link: "/policies/shipping"
@@ -49,11 +49,11 @@ export default function WorkflowSection() {
     <section className="py-16 sm:py-20 bg-white border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-2">
+          <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-2">
             Structured Sourcing Process
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            How Procurement Works With Asian Enterprises
+            How Procurement Works With Gurudev Enterprise
           </h2>
           <p className="text-sm text-slate-600 mt-2">
             A transparent four-step workflow built to convert complex industrial requirements into dependable on-site dispatches.
@@ -66,15 +66,15 @@ export default function WorkflowSection() {
             return (
               <div 
                 key={idx}
-                className="relative bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-[#0B2D5B] transition-colors flex flex-col justify-between"
+                className="relative bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-[#102B46] transition-colors flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-2xl font-black text-slate-300 font-mono">
                       {step.number}
                     </span>
-                    <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 text-[#0B2D5B] flex items-center justify-center shadow-xs">
-                      <Icon className="w-5 h-5 text-[#F05A28]" />
+                    <div className="w-10 h-10 rounded-lg bg-white border border-slate-200 text-[#102B46] flex items-center justify-center shadow-xs">
+                      <Icon className="w-5 h-5 text-[#F28C28]" />
                     </div>
                   </div>
 
@@ -92,7 +92,7 @@ export default function WorkflowSection() {
                   </span>
                   <Link
                     href={step.link}
-                    className="font-bold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1"
+                    className="font-bold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1"
                   >
                     <span>Details</span>
                     <ArrowRight className="w-3 h-3" />
@@ -106,7 +106,7 @@ export default function WorkflowSection() {
         <div className="mt-12 text-center">
           <Link
             href="/rfq"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B2D5B] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-xs transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#102B46] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-xs transition-colors"
           >
             <span>Start Your Procurement Request</span>
             <ArrowRight className="w-4 h-4" />

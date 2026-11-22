@@ -46,7 +46,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hello Asian Enterprises, I require a quotation for:\n\n*Product:* ${product.name}\n*Quantity:* ${quantity} ${product.packagingUnit}\n*Delivery Location:* ${pincode ? `Pincode ${pincode}` : 'Pan-India'}\n\nPlease share commercial pricing and lead time.`
+    `Hello Gurudev Enterprise, I require a quotation for:\n\n*Product:* ${product.name}\n*Quantity:* ${quantity} ${product.packagingUnit}\n*Delivery Location:* ${pincode ? `Pincode ${pincode}` : 'Pan-India'}\n\nPlease share commercial pricing and lead time.`
   );
 
   return (
@@ -64,7 +64,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60" />
 
           <div className="absolute top-4 left-4 flex flex-col gap-1.5">
-            <span className="text-xs font-bold bg-[#0B2D5B] text-white px-2.5 py-1 rounded shadow-xs">
+            <span className="text-xs font-bold bg-[#102B46] text-white px-2.5 py-1 rounded shadow-xs">
               {product.categoryName.split('&')[0].trim()}
             </span>
             {product.isFastMoving && (
@@ -85,7 +85,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         {/* Product Procurement Card */}
         <div className="lg:col-span-7 p-6 sm:p-10 space-y-6">
           <div>
-            <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+            <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
               Industrial Supply & Sourcing
             </span>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight">
@@ -102,7 +102,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
                 Commercial Pricing
               </span>
-              <span className="text-base font-bold text-[#0B2D5B]">
+              <span className="text-base font-bold text-[#102B46]">
                 Price upon Quotation (RFQ)
               </span>
               <p className="text-[11px] text-slate-500 mt-0.5">
@@ -128,7 +128,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                 min="1"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B] text-slate-900 font-semibold"
+                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46] text-slate-900 font-semibold"
               />
             </div>
 
@@ -146,7 +146,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                     setPincodeChecked(false);
                   }}
                   placeholder="e.g. 560068"
-                  className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B] text-slate-900"
+                  className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46] text-slate-900"
                 />
                 <button
                   type="button"
@@ -174,7 +174,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
               <button
                 type="button"
                 onClick={handleQuoteClick}
-                className="w-full sm:flex-1 py-3.5 px-6 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
+                className="w-full sm:flex-1 py-3.5 px-6 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
               >
                 <span>Request a Quote ({quantity} {product.packagingUnit})</span>
                 <ArrowRight className="w-4 h-4" />
@@ -196,8 +196,8 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                 <Clock className="w-3.5 h-3.5 text-slate-400" />
                 <span>Lead Time: {product.leadTime}</span>
               </span>
-              <Link href="/boq-upload" className="text-[#0B2D5B] hover:underline font-semibold flex items-center gap-1">
-                <FileText className="w-3.5 h-3.5 text-[#F05A28]" />
+              <Link href="/boq-upload" className="text-[#102B46] hover:underline font-semibold flex items-center gap-1">
+                <FileText className="w-3.5 h-3.5 text-[#F28C28]" />
                 <span>Upload Bulk BOQ Instead &rarr;</span>
               </Link>
             </div>

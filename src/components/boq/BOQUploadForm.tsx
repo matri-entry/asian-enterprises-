@@ -114,7 +114,7 @@ export default function BOQUploadForm() {
         </span>
 
         <h3 className="text-2xl font-black text-slate-900 mt-4 mb-2">
-          BOQ Reference: <span className="text-[#0B2D5B]">{successData.boqId}</span>
+          BOQ Reference: <span className="text-[#102B46]">{successData.boqId}</span>
         </h3>
 
         <p className="text-sm text-slate-600 leading-relaxed max-w-lg mx-auto mb-6">
@@ -136,13 +136,13 @@ export default function BOQUploadForm() {
           </div>
           <div className="flex items-center gap-2 pt-1 text-slate-500 text-[11px]">
             <Lock className="w-3.5 h-3.5 text-slate-400" />
-            <span>Stored in encrypted non-public storage. Accessed solely by Asian Enterprises procurement engineers.</span>
+            <span>Stored in encrypted non-public storage. Accessed solely by Gurudev Enterprise procurement engineers.</span>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Asian Enterprises, I have uploaded project BOQ reference ${successData.boqId} for ${formData.companyName}. Please acknowledge.`)}`}
+            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Gurudev Enterprise, I have uploaded project BOQ reference ${successData.boqId} for ${formData.companyName}. Please acknowledge.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-xs flex items-center justify-center gap-2"
@@ -183,7 +183,7 @@ export default function BOQUploadForm() {
           Upload your electrical single line diagram (SLD), bill of quantities, tender schedule, or material estimate.
         </p>
 
-        <div className="border-2 border-dashed border-slate-300 hover:border-[#0B2D5B] rounded-xl p-8 text-center bg-slate-50/50 transition-colors">
+        <div className="border-2 border-dashed border-slate-300 hover:border-[#102B46] rounded-xl p-8 text-center bg-slate-50/50 transition-colors">
           <input
             type="file"
             id="boqFileInput"
@@ -194,8 +194,8 @@ export default function BOQUploadForm() {
 
           {!selectedFile ? (
             <label htmlFor="boqFileInput" className="cursor-pointer block">
-              <UploadCloud className="w-12 h-12 text-[#0B2D5B] mx-auto mb-3" />
-              <span className="text-sm font-bold text-[#0B2D5B] hover:text-[#F05A28] block mb-1">
+              <UploadCloud className="w-12 h-12 text-[#102B46] mx-auto mb-3" />
+              <span className="text-sm font-bold text-[#102B46] hover:text-[#F28C28] block mb-1">
                 Click to browse or drag and drop your document
               </span>
               <span className="text-xs text-slate-500 block">
@@ -205,7 +205,7 @@ export default function BOQUploadForm() {
           ) : (
             <div className="flex items-center justify-between bg-white p-4 rounded-lg border border-slate-200 max-w-md mx-auto">
               <div className="flex items-center gap-3 text-left">
-                <FileText className="w-8 h-8 text-[#F05A28]" />
+                <FileText className="w-8 h-8 text-[#F28C28]" />
                 <div>
                   <span className="font-bold text-slate-900 text-xs block truncate max-w-[220px]">
                     {selectedFile.name}
@@ -231,7 +231,7 @@ export default function BOQUploadForm() {
       {/* Project & Client Identification */}
       <div>
         <div className="flex items-center gap-2 border-b border-slate-200 pb-3 mb-6">
-          <Building2 className="w-5 h-5 text-[#0B2D5B]" />
+          <Building2 className="w-5 h-5 text-[#102B46]" />
           <h3 className="text-base font-bold text-slate-900">
             Project & Commercial Contact Details
           </h3>
@@ -247,7 +247,7 @@ export default function BOQUploadForm() {
               value={formData.projectTitle}
               onChange={(e) => setFormData({ ...formData, projectTitle: e.target.value })}
               placeholder="e.g. Phase 2 Factory Expansion"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -261,7 +261,7 @@ export default function BOQUploadForm() {
               value={formData.companyName}
               onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
               placeholder="e.g. Bharat Infra Projects Ltd"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -275,7 +275,7 @@ export default function BOQUploadForm() {
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
               placeholder="e.g. Suresh Nair"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -289,7 +289,7 @@ export default function BOQUploadForm() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="e.g. purchase@bharatinfra.com"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -303,7 +303,7 @@ export default function BOQUploadForm() {
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="e.g. 9811223344"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -316,7 +316,7 @@ export default function BOQUploadForm() {
               value={formData.gstin}
               onChange={(e) => setFormData({ ...formData, gstin: e.target.value.toUpperCase() })}
               placeholder="29AAAAA0000A1Z5"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 uppercase focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 uppercase focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -330,7 +330,7 @@ export default function BOQUploadForm() {
               value={formData.city}
               onChange={(e) => setFormData({ ...formData, city: e.target.value })}
               placeholder="e.g. Bengaluru / Neemrana"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -345,7 +345,7 @@ export default function BOQUploadForm() {
               value={formData.pincode}
               onChange={(e) => setFormData({ ...formData, pincode: e.target.value })}
               placeholder="560068"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -357,7 +357,7 @@ export default function BOQUploadForm() {
               type="date"
               value={formData.requiredDeliveryDate}
               onChange={(e) => setFormData({ ...formData, requiredDeliveryDate: e.target.value })}
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
         </div>
@@ -371,7 +371,7 @@ export default function BOQUploadForm() {
             value={formData.additionalNotes}
             onChange={(e) => setFormData({ ...formData, additionalNotes: e.target.value })}
             placeholder="List any mandatory brand makes, inspection agency requirements, or special transit conditions."
-            className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
       </div>
@@ -379,22 +379,22 @@ export default function BOQUploadForm() {
       {/* Security Note & Submit */}
       <div className="pt-4 border-t border-slate-200 space-y-4">
         <div className="p-3.5 rounded-lg bg-blue-50/60 border border-blue-200 text-xs text-slate-600 flex items-start gap-2.5">
-          <Lock className="w-4 h-4 text-[#0B2D5B] shrink-0 mt-0.5" />
+          <Lock className="w-4 h-4 text-[#102B46] shrink-0 mt-0.5" />
           <div>
-            <strong className="text-[#0B2D5B] block font-bold">Confidential Commercial Guarantee:</strong>
-            <span>Your project drawings and BOQ documents are stored privately in non-public storage. Asian Enterprises never exposes customer engineering schedules to unauthorized parties.</span>
+            <strong className="text-[#102B46] block font-bold">Confidential Commercial Guarantee:</strong>
+            <span>Your project drawings and BOQ documents are stored privately in non-public storage. Gurudev Enterprise never exposes customer engineering schedules to unauthorized parties.</span>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
           <span className="text-xs text-slate-500">
-            Prefer line-item entry? <Link href="/rfq" className="text-[#0B2D5B] font-bold underline">Use Online RFQ Builder</Link>
+            Prefer line-item entry? <Link href="/rfq" className="text-[#102B46] font-bold underline">Use Online RFQ Builder</Link>
           </span>
 
           <button
             type="submit"
             disabled={submitting}
-            className="w-full sm:w-auto px-8 py-3.5 bg-[#F05A28] hover:bg-[#D94819] disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#F28C28] hover:bg-[#D9771E] disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
           >
             {submitting ? (
               <>

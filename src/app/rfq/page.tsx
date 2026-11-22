@@ -5,7 +5,7 @@ import RFQForm from '@/components/rfq/RFQForm';
 import { FileText, ShieldCheck, Clock, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Request a Quote (RFQ) | Asian Enterprises Industrial Procurement',
+  title: 'Request a Quote (RFQ) | Gurudev Enterprise Industrial Procurement',
   description: 'Submit an online Request for Quotation for industrial electricals, power cables, switchgear, panel accessories, and hardware. Fast quotations across India.',
 };
 
@@ -35,7 +35,7 @@ export default function RFQPage({ searchParams }: RFQPageProps) {
         {/* Breadcrumb & Header */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -46,14 +46,14 @@ export default function RFQPage({ searchParams }: RFQPageProps) {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+              <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
                 Multi-Product Procurement Portal
               </span>
               <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 Request for Quotation (RFQ)
               </h1>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl leading-relaxed">
-                Add one or multiple industrial products, quantities, and delivery specifications. Our commercial team in Bengaluru & Jaipur will review requirements and generate a tailored quotation.
+                Add one or multiple industrial products, quantities, and delivery specifications. Our commercial team in Bengaluru will review requirements and generate a tailored quotation.
               </p>
             </div>
 
@@ -62,7 +62,7 @@ export default function RFQPage({ searchParams }: RFQPageProps) {
                 href="/boq-upload"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 text-xs font-bold rounded shadow-xs transition-colors"
               >
-                <FileText className="w-4 h-4 text-[#F05A28]" />
+                <FileText className="w-4 h-4 text-[#F28C28]" />
                 <span>Upload Excel / PDF BOQ</span>
               </Link>
             </div>
@@ -80,7 +80,7 @@ export default function RFQPage({ searchParams }: RFQPageProps) {
           </div>
 
           <div className="p-4 rounded-xl bg-white border border-slate-200 flex items-center gap-3">
-            <Clock className="w-8 h-8 text-[#0B2D5B] shrink-0" />
+            <Clock className="w-8 h-8 text-[#102B46] shrink-0" />
             <div>
               <strong className="text-slate-900 block font-bold">Fast Review</strong>
               <span className="text-slate-500 text-[11px]">Reviewed promptly by procurement engineers</span>
@@ -88,10 +88,10 @@ export default function RFQPage({ searchParams }: RFQPageProps) {
           </div>
 
           <div className="p-4 rounded-xl bg-white border border-slate-200 flex items-center gap-3">
-            <Building2 className="w-8 h-8 text-[#F05A28] shrink-0" />
+            <Building2 className="w-8 h-8 text-[#F28C28] shrink-0" />
             <div>
               <strong className="text-slate-900 block font-bold">Pan-India Dispatches</strong>
-              <span className="text-slate-500 text-[11px]">Bengaluru HQ & Jaipur regional desk</span>
+              <span className="text-slate-500 text-[11px]">Bengaluru central desk & pan-India dispatch</span>
             </div>
           </div>
         </div>

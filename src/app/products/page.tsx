@@ -7,10 +7,10 @@ import ProductListClient from '@/components/products/ProductListClient';
 import { Layers, FileText, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Industrial Product Catalogue | Asian Enterprises B2B Industrial Supply',
+  title: 'Industrial Product Catalogue | Gurudev Enterprise B2B Supply',
   description: 'Search and browse B2B electrical equipment, HT/LT power cables, switchgear, panel accessories, safety products, and industrial hardware for pan-India procurement.',
   openGraph: {
-    title: 'Industrial Product Catalogue | Asian Enterprises',
+    title: 'Industrial Product Catalogue | Gurudev Enterprise',
     description: 'B2B procurement catalogue for factories, contractors, and panel builders across India.',
     images: ['/images/logo.png']
   }
@@ -23,7 +23,7 @@ export default function ProductsPage() {
         {/* Breadcrumb & Header */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -34,7 +34,7 @@ export default function ProductsPage() {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F05A28] uppercase tracking-wider mb-2">
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#F28C28] uppercase tracking-wider mb-2">
                 <Layers className="w-3.5 h-3.5" />
                 <span>Pan-India B2B Industrial Supply</span>
               </div>
@@ -51,12 +51,12 @@ export default function ProductsPage() {
                 href="/boq-upload"
                 className="px-4 py-2 bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 text-xs font-bold rounded shadow-xs flex items-center gap-2 transition-colors"
               >
-                <FileText className="w-3.5 h-3.5 text-[#F05A28]" />
+                <FileText className="w-3.5 h-3.5 text-[#F28C28]" />
                 <span>Submit Complete BOQ</span>
               </Link>
               <Link
                 href="/rfq"
-                className="px-4 py-2 bg-[#F05A28] hover:bg-[#D94819] text-white text-xs font-bold uppercase rounded shadow-xs transition-colors"
+                className="px-4 py-2 bg-[#F28C28] hover:bg-[#D9771E] text-white text-xs font-bold uppercase rounded shadow-xs transition-colors"
               >
                 Request a Quote
               </Link>

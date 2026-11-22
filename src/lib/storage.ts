@@ -33,7 +33,7 @@ export function saveLead(leadData: Omit<LeadRecord, 'id' | 'createdAt' | 'update
   ensureDirectories();
   const leads = getAllLeads();
   const year = new Date().getFullYear();
-  const prefix = leadData.type === 'BOQ_UPLOAD' ? 'AE-BOQ' : leadData.type === 'CUSTOM_SOURCING' ? 'AE-SRC' : 'AE-RFQ';
+  const prefix = leadData.type === 'BOQ_UPLOAD' ? 'GE-BOQ' : leadData.type === 'CUSTOM_SOURCING' ? 'GE-SRC' : 'GE-RFQ';
   const idNumber = String(leads.length + 1).padStart(4, '0');
   const id = `${prefix}-${year}-${idNumber}`;
   

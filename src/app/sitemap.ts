@@ -3,8 +3,8 @@ import { CATEGORIES } from '@/data/categories';
 import { PRODUCTS } from '@/data/products';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://asianenterprise.in';
-  const now = new Date('2026-10-24');
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gurudeventerprise.in';
+  const now = new Date('2026-11-22');
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

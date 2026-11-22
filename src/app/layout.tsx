@@ -5,40 +5,44 @@ import Footer from '@/components/Footer';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { COMPANY } from '@/data/company';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://gurudeventerprise.in';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://asianenterprise.in'),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'ASIAN ENTERPRISES | B2B Industrial Trading, Sourcing & Procurement India',
-    template: '%s | ASIAN ENTERPRISES'
+    default: 'Gurudev Enterprise | Industrial Electrical Equipment & MRO Supplier in Bengaluru',
+    template: '%s | Gurudev Enterprise'
   },
-  description: 'Your trusted partner for industrial procurement. Electrical products, power cables, switchgear, safety products, and multi-category sourcing for businesses across India.',
+  description: 'Gurudev Enterprise supplies industrial electrical equipment, switchgear, cables, electrical panels, lighting and MRO products to factories, contractors and businesses in Bengaluru.',
   keywords: [
-    'B2B industrial electrical supplier India',
+    'Gurudev Enterprise Bengaluru',
+    'industrial electrical equipment supplier Bengaluru',
+    'MRO supplier Bommanahalli Bengaluru',
     'industrial switchgear procurement',
     'HT LT power cables supplier Bengaluru',
     'electrical panels PCC MCC APFC',
-    'industrial safety equipment BOQ',
-    'Asian Enterprises Bengaluru Jaipur',
-    'pan-India electrical sourcing'
+    'industrial safety equipment BOQ Bengaluru',
+    'cable trays and earthing products Karnataka'
   ],
-  authors: [{ name: 'ASIAN ENTERPRISES' }],
+  authors: [{ name: COMPANY.brandName }],
   icons: {
     icon: '/images/symbol.png',
-    apple: '/images/symbol.png'
+    apple: '/images/symbol.png',
+    shortcut: '/favicon.ico'
   },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://asianenterprise.in',
-    siteName: 'ASIAN ENTERPRISES',
-    title: 'ASIAN ENTERPRISES | Industrial Trading & Procurement',
-    description: 'B2B industrial procurement and multi-category sourcing serving customers across India. Main operations in Bengaluru, sales office in Jaipur.',
+    url: SITE_URL,
+    siteName: COMPANY.brandName,
+    title: 'Gurudev Enterprise | Industrial Electrical Equipment & MRO Supplier in Bengaluru',
+    description: 'Gurudev Enterprise supplies industrial electrical equipment, switchgear, cables, electrical panels, lighting and MRO products to factories, contractors and businesses in Bengaluru.',
     images: [
       {
         url: '/images/logo.png',
         width: 1024,
         height: 341,
-        alt: 'Asian Enterprises Logo'
+        alt: 'Gurudev Enterprise Logo'
       }
     ]
   }
@@ -50,8 +54,8 @@ const jsonLd = {
   'name': COMPANY.brandName,
   'legalName': COMPANY.registeredName,
   'description': COMPANY.subtitle,
-  'url': 'https://asianenterprise.in',
-  'logo': 'https://asianenterprise.in/images/logo.png',
+  'url': SITE_URL,
+  'logo': `${SITE_URL}/images/logo.png`,
   'telephone': COMPANY.contact.primaryPhone,
   'email': COMPANY.contact.email,
   'taxID': COMPANY.gstin,
@@ -65,8 +69,8 @@ const jsonLd = {
   },
   'geo': {
     '@type': 'GeoCoordinates',
-    'latitude': '12.9038',
-    'longitude': '77.6253'
+    'latitude': COMPANY.mainOperations.coordinates.latitude,
+    'longitude': COMPANY.mainOperations.coordinates.longitude
   },
   'openingHoursSpecification': {
     '@type': 'OpeningHoursSpecification',
@@ -74,10 +78,16 @@ const jsonLd = {
     'opens': '09:00',
     'closes': '19:00'
   },
-  'areaServed': {
-    '@type': 'Country',
-    'name': 'India'
-  }
+  'areaServed': [
+    {
+      '@type': 'City',
+      'name': 'Bengaluru'
+    },
+    {
+      '@type': 'Country',
+      'name': 'India'
+    }
+  ]
 };
 
 export default function RootLayout({

@@ -6,8 +6,8 @@ import { Search, Compass, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { COMPANY } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Custom Industrial Sourcing | Asian Enterprises',
-  description: 'Source hard-to-find, obsolete, or specialized industrial equipment and components across India. Supplier-backed procurement by Asian Enterprises.',
+  title: 'Custom Industrial Sourcing | Gurudev Enterprise',
+  description: 'Source hard-to-find, obsolete, or specialized industrial equipment and components across India. Supplier-backed procurement by Gurudev Enterprise.',
 };
 
 export default function CustomSourcingPage() {
@@ -17,7 +17,7 @@ export default function CustomSourcingPage() {
         {/* Breadcrumb & Header */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -28,7 +28,7 @@ export default function CustomSourcingPage() {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+              <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
                 Specialized Sourcing Network
               </span>
               <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -48,15 +48,15 @@ export default function CustomSourcingPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-600">
             <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <strong className="text-[#0B2D5B] block font-bold mb-1">1. Requirement Review</strong>
+              <strong className="text-[#102B46] block font-bold mb-1">1. Requirement Review</strong>
               <span>Our team reviews engineering parameters, voltage/amperage, and physical envelope constraints.</span>
             </div>
             <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <strong className="text-[#0B2D5B] block font-bold mb-1">2. Network Search</strong>
+              <strong className="text-[#102B46] block font-bold mb-1">2. Network Search</strong>
               <span>We scan established distributor networks, Tier-1 manufacturer channels, and specialty trade partners across India.</span>
             </div>
             <div className="p-3 bg-slate-50 rounded-lg border border-slate-100">
-              <strong className="text-[#0B2D5B] block font-bold mb-1">3. Quotation & Dispatch</strong>
+              <strong className="text-[#102B46] block font-bold mb-1">3. Quotation & Dispatch</strong>
               <span>You receive written confirmation of exact brand make, price, tax rate, and expected dispatch timeline.</span>
             </div>
           </div>

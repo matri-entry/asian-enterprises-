@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({
       success: true,
       rfqId: lead.id,
-      message: `Your Request for Quotation (${lead.id}) has been recorded. Our Bengaluru & Jaipur procurement desk will review specifications with suppliers and send your commercial quote shortly.`
+      message: `Your Request for Quotation (${lead.id}) has been recorded. Our Gurudev Enterprise Bengaluru procurement team will review specifications and send your commercial quote shortly.`
     });
   } catch (error: any) {
     console.error('RFQ submission error:', error);

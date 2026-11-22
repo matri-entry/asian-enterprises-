@@ -17,8 +17,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Asian Enterprises | B2B Industrial Procurement & Sourcing',
-  description: 'Learn about Asian Enterprises, a dedicated B2B industrial trading and supply partner serving manufacturing plants, panel builders, and contractors across India.',
+  title: 'About Gurudev Enterprise | Industrial Electrical Equipment & MRO Supplier',
+  description: 'Learn about Gurudev Enterprise, a dedicated B2B industrial electrical equipment and MRO supply partner serving manufacturing plants, panel builders, and contractors across India.',
 };
 
 export default function AboutPage() {
@@ -28,7 +28,7 @@ export default function AboutPage() {
         {/* Breadcrumb & Title */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -37,14 +37,14 @@ export default function AboutPage() {
             </span>
           </nav>
 
-          <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+          <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
             Corporate Profile
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            About ASIAN ENTERPRISES
+            About GURUDEV ENTERPRISE
           </h1>
           <p className="text-base text-slate-600 mt-2 max-w-3xl leading-relaxed">
-            A B2B industrial trading, sourcing, and procurement partner dedicated to simplifying material acquisition for manufacturing plants, infrastructure projects, and engineering contractors across India.
+            A B2B industrial electrical equipment and MRO supplier dedicated to simplifying material acquisition for manufacturing plants, infrastructure projects, and engineering contractors across India.
           </p>
         </div>
 
@@ -62,10 +62,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs text-slate-600 leading-relaxed">
             <div className="space-y-4">
               <p>
-                <strong>ASIAN ENTERPRISES</strong> operates as an agile industrial trading enterprise. We specialize in aggregating diverse industrial requirements—ranging from engineered electrical distribution panels and high-voltage power transmission cables to switchgear, testing instruments, fasteners, and workshop safety supplies.
+                <strong>GURUDEV ENTERPRISE</strong> operates as an agile industrial trading enterprise. We specialize in aggregating diverse industrial requirements—ranging from engineered electrical distribution panels (PCC, MCC, PFC, ACDB, DCDB) and high-voltage power transmission cables to switchgear (MCB, MCCB, RCCB, contactors, relays), testing instruments, earthing solutions, fasteners, and workshop safety supplies.
               </p>
               <p>
-                Industrial buyers frequently encounter delays and operational friction dealing with dozens of separate single-category suppliers. Asian Enterprises solves this challenge through a <strong>single-window procurement model</strong>: clients submit their project Bill of Materials (BOM), and our commercial desk executes the vendor coordination, price negotiation, batch consolidation, and dispatch logistics.
+                Industrial buyers frequently encounter delays and operational friction dealing with dozens of separate single-category suppliers. Gurudev Enterprise solves this challenge through a <strong>single-window procurement model</strong>: clients submit their project Bill of Materials (BOM), and our commercial desk executes the vendor coordination, price negotiation, batch consolidation, and dispatch logistics.
               </p>
             </div>
 
@@ -81,11 +81,11 @@ export default function AboutPage() {
               </div>
 
               <div className="p-4 bg-blue-50/60 rounded-xl border border-blue-200 space-y-1">
-                <span className="font-bold text-[#0B2D5B] block text-xs">
-                  Official Transition Notice:
+                <span className="font-bold text-[#102B46] block text-xs">
+                  Commercial Compliance & Trust:
                 </span>
                 <p className="text-[11px] text-slate-600">
-                  The business previously conducted trade operations under the name Krish Enterprise. All ongoing operations, customer relationships, supplier coordination, and trade engagements are now consolidated under the unified brand <strong>ASIAN ENTERPRISES</strong>.
+                  All commercial supplies coordinated by Gurudev Enterprise are accompanied by 100% compliant GST tax invoices (GSTIN: <strong>{COMPANY.gstin}</strong>), valid E-Way bills, and manufacturer test reports where applicable.
                 </p>
               </div>
             </div>
@@ -97,8 +97,8 @@ export default function AboutPage() {
           {/* Bengaluru HQ */}
           <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#0B2D5B] flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-[#0B2D5B]" />
+              <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#102B46] flex items-center justify-center">
+                <Building2 className="w-5 h-5 text-[#102B46]" />
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 text-sm">
@@ -119,37 +119,37 @@ export default function AboutPage() {
               </p>
               <p>
                 <strong>Primary Roles:</strong><br />
-                Central quotation desk, vendor management, quality verification, and dispatch coordination for Southern and Western industrial sectors.
+                Central quotation desk, vendor management, quality verification, and dispatch coordination for industrial facilities across India.
               </p>
             </div>
           </div>
 
-          {/* Jaipur Regional Desk */}
+          {/* Pan-India Logistics & Supply */}
           <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-orange-50 text-[#F05A28] flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-[#F05A28]" />
+              <div className="w-10 h-10 rounded-lg bg-orange-50 text-[#F28C28] flex items-center justify-center">
+                <Truck className="w-5 h-5 text-[#F28C28]" />
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 text-sm">
-                  Regional Sales Office (Jaipur)
+                  Pan-India Supply Network
                 </h3>
-                <span className="text-[11px] text-slate-500">Regional Client Coordination</span>
+                <span className="text-[11px] text-slate-500">Nationwide Material Logistics</span>
               </div>
             </div>
 
             <div className="text-xs text-slate-600 space-y-2 pt-2 border-t border-slate-100">
               <p>
-                <strong>Location:</strong><br />
-                Jaipur, Rajasthan
+                <strong>Coverage Scope:</strong><br />
+                Serving manufacturing plants, EPC contractors, and infrastructure sites across all states and Union Territories in India.
               </p>
               <p>
-                <strong>Coverage Focus:</strong><br />
-                Serving client facilities, EPC contractors, and manufacturing estates throughout Rajasthan, Delhi-NCR, Haryana, and Gujarat industrial corridors.
+                <strong>Freight Coordination:</strong><br />
+                Dedicated freight forwarders, parcel express, and PTL/FTL carriers with door-delivery tracking and transit insurance.
               </p>
               <p>
                 <strong>Primary Roles:</strong><br />
-                Regional customer enquiry intake, project site coordination, and commercial follow-ups.
+                Safe packaging, transit documentation, E-Way compliance, and on-time site dispatches.
               </p>
             </div>
           </div>
@@ -186,10 +186,10 @@ export default function AboutPage() {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#0B2D5B] rounded-xl p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="bg-[#102B46] rounded-xl p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-lg font-bold text-white">
-              Partner with Asian Enterprises for Your Industrial Sourcing
+              Partner with Gurudev Enterprise for Your Industrial Sourcing
             </h3>
             <p className="text-xs text-slate-300 mt-1">
               Have an upcoming plant shutdown, expansion, or ongoing project schedule? Let our desk quote your requirement.
@@ -197,7 +197,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/rfq"
-            className="px-6 py-3 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shrink-0 shadow-xs"
+            className="px-6 py-3 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shrink-0 shadow-xs"
           >
             Submit an RFQ
           </Link>

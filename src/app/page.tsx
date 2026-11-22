@@ -11,11 +11,11 @@ import { COMPANY } from '@/data/company';
 import { Building2, Phone, Mail, Clock, ShieldCheck, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Asian Enterprises | B2B Industrial Trading, Sourcing & Procurement India',
-  description: 'Your trusted partner for industrial procurement. Electrical products, power cables, switchgear, safety products, and multi-category sourcing for businesses across India.',
+  title: 'Gurudev Enterprise | Industrial Electrical Equipment & MRO Supplier Bengaluru',
+  description: 'Your trusted partner for industrial electrical equipment and MRO supply. Power cables, switchgear, control panels, safety equipment, and multi-category sourcing across India.',
   openGraph: {
-    title: 'Asian Enterprises | Industrial Procurement Partner',
-    description: 'B2B industrial trading, procurement, and multi-category sourcing across India. Operations in Bengaluru & Jaipur.',
+    title: 'Gurudev Enterprise | Industrial Electrical Equipment & MRO Supplier',
+    description: 'B2B industrial electrical equipment, MRO supply, and multi-category sourcing across India. Central operations in Bommanahalli, Bengaluru.',
     images: ['/images/logo.png']
   }
 };
@@ -46,14 +46,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-5 space-y-5">
-              <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block">
-                Connect With Our Procurement Desks
+              <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block">
+                Connect With Our Procurement Desk
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                Share Your Requirement With Asian Enterprises
+                Share Your Requirement With Gurudev Enterprise
               </h2>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Whether you need a single fast-moving replacement component or complete project material supply across electrical and mechanical categories, our desks in Bengaluru and Jaipur are ready to assist.
+                Whether you need a single fast-moving replacement component or complete project material supply across electrical and mechanical categories, our team in Bengaluru is ready to assist.
               </p>
 
               <div className="space-y-3 pt-2 text-xs">
@@ -68,22 +68,22 @@ export default function HomePage() {
                 </div>
 
                 <div className="p-4 bg-white rounded-xl border border-slate-200 space-y-1">
-                  <span className="font-bold text-slate-900 block">Regional Sales (Jaipur)</span>
+                  <span className="font-bold text-slate-900 block">Pan-India Distribution & Dispatch</span>
                   <p className="text-slate-600 text-[11px] leading-relaxed">
-                    Jaipur, Rajasthan &bull; Serving Northern and Western industrial zones
+                    Fast dispatch from Bengaluru to plant facilities, panel builders, and project sites across all states in India.
                   </p>
                 </div>
 
-                <div className="p-4 bg-[#0B2D5B] text-white rounded-xl space-y-2">
+                <div className="p-4 bg-[#102B46] text-white rounded-xl space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] text-blue-200">Phone Hotline:</span>
-                    <a href={`tel:${COMPANY.contact.primaryPhone}`} className="font-bold text-white hover:text-[#F05A28]">
+                    <a href={`tel:${COMPANY.contact.primaryPhone}`} className="font-bold text-white hover:text-[#F28C28]">
                       {COMPANY.contact.primaryPhoneDisplay}
                     </a>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] text-blue-200">Direct Email:</span>
-                    <a href={`mailto:${COMPANY.contact.email}`} className="font-bold text-white hover:text-[#F05A28]">
+                    <a href={`mailto:${COMPANY.contact.email}`} className="font-bold text-white hover:text-[#F28C28]">
                       {COMPANY.contact.email}
                     </a>
                   </div>

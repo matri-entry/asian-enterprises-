@@ -35,10 +35,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   if (!product) return { title: 'Product Not Found' };
 
   return {
-    title: `${product.name} | Asian Enterprises Quotation & Supply`,
-    description: `${product.shortDescription} - Request bulk quotation and pan-India dispatch from Asian Enterprises.`,
+    title: `${product.name} | Gurudev Enterprise Quotation & Supply`,
+    description: `${product.shortDescription} - Request bulk quotation and pan-India dispatch from Gurudev Enterprise.`,
     openGraph: {
-      title: `${product.name} - Asian Enterprises`,
+      title: `${product.name} - Gurudev Enterprise`,
       description: product.shortDescription,
       images: [product.image]
     }
@@ -60,15 +60,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
-          <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+          <Link href="/" className="hover:text-[#102B46] transition-colors">
             Home
           </Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#0B2D5B] transition-colors">
+          <Link href="/products" className="hover:text-[#102B46] transition-colors">
             Products
           </Link>
           <span>/</span>
-          <Link href={`/categories/${product.categorySlug}`} className="hover:text-[#0B2D5B] transition-colors">
+          <Link href={`/categories/${product.categorySlug}`} className="hover:text-[#102B46] transition-colors">
             {product.categoryName}
           </Link>
           <span>/</span>
@@ -115,8 +115,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
                   {/* Render Verified Specifications */}
                   {Object.entries(product.specifications).map(([key, val], idx) => (
-                    <tr 
-                      key={key} 
+                    <tr
+                      key={key}
                       className={`border-b border-slate-100 ${idx % 2 === 0 ? 'bg-slate-50/50' : 'bg-white'}`}
                     >
                       <td className="py-2.5 px-4 font-bold text-slate-700">{key}</td>
@@ -126,7 +126,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
                   <tr className="bg-slate-50/50">
                     <td className="py-2.5 px-4 font-bold text-slate-700">Pricing & Commercials</td>
-                    <td className="py-2.5 px-4 text-[#F05A28] font-bold">
+                    <td className="py-2.5 px-4 text-[#F28C28] font-bold">
                       Quotation based on volume & delivery location (Request a Quote)
                     </td>
                   </tr>
@@ -142,7 +142,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <ul className="space-y-2 text-xs text-slate-700">
                 {product.verifiedFeatures.map((feat, fIdx) => (
                   <li key={fIdx} className="flex items-start gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#F05A28] mt-1.5 shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#F28C28] mt-1.5 shrink-0" />
                     <span>{feat}</span>
                   </li>
                 ))}
@@ -164,13 +164,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="lg:col-span-4 space-y-6">
             <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-4">
               <h3 className="text-sm font-bold text-slate-900 border-b border-slate-100 pb-2 flex items-center gap-2">
-                <Truck className="w-4 h-4 text-[#0B2D5B]" />
+                <Truck className="w-4 h-4 text-[#102B46]" />
                 <span>Pan-India Supply & Fulfilment</span>
               </h3>
 
               <div className="space-y-3 text-xs text-slate-600">
                 <div className="p-3 rounded-lg bg-blue-50/60 border border-blue-100">
-                  <strong className="text-[#0B2D5B] block font-bold mb-1">
+                  <strong className="text-[#102B46] block font-bold mb-1">
                     Procurement Workflow:
                   </strong>
                   <span>1. Share quantity & delivery pincode.</span><br />
@@ -184,7 +184,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                     <span>Manufacturer test certificates provided upon request</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <FileText className="w-3.5 h-3.5 text-[#0B2D5B] shrink-0" />
+                    <FileText className="w-3.5 h-3.5 text-[#102B46] shrink-0" />
                     <span>GST tax invoice with 100% credit pass-through</span>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   href="/boq-upload"
                   className="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded flex items-center justify-center gap-2 transition-colors"
                 >
-                  <FileText className="w-3.5 h-3.5 text-[#F05A28]" />
+                  <FileText className="w-3.5 h-3.5 text-[#F28C28]" />
                   <span>Have a Bulk Bill of Quantities?</span>
                 </Link>
               </div>
@@ -203,7 +203,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
             {/* Direct Support Box */}
             <div className="bg-slate-900 rounded-xl p-6 text-white text-xs space-y-3">
-              <span className="text-[10px] uppercase font-bold text-[#F05A28] tracking-wider block">
+              <span className="text-[10px] uppercase font-bold text-[#F28C28] tracking-wider block">
                 Technical Sales Desk
               </span>
               <p className="text-slate-300 leading-relaxed text-[11px]">
@@ -212,7 +212,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="space-y-1 pt-1 font-mono text-xs">
                 <a 
                   href={`tel:${COMPANY.contact.primaryPhone}`} 
-                  className="block text-white hover:text-[#F05A28] transition-colors"
+                  className="block text-white hover:text-[#F28C28] transition-colors"
                 >
                   Call: {COMPANY.contact.primaryPhoneDisplay}
                 </a>
@@ -236,7 +236,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </h3>
               <Link
                 href={`/categories/${product.categorySlug}`}
-                className="text-xs font-bold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1"
+                className="text-xs font-bold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1"
               >
                 <span>View All In Category</span>
                 <ChevronRight className="w-4 h-4" />

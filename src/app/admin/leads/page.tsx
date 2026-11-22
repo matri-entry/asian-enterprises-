@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ShieldCheck, Lock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Internal Sales Desk & Leads | Asian Enterprises',
+  title: 'Internal Sales Desk & Leads | Gurudev Enterprise',
   description: 'Internal operations dashboard for commercial RFQ management and order pipeline.',
   robots: {
     index: false,
@@ -19,7 +19,7 @@ export default function AdminLeadsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <div className="flex items-center justify-between">
           <nav className="flex items-center gap-2 text-xs text-slate-500">
-            <Link href="/" className="hover:text-[#0B2D5B]">Home</Link>
+            <Link href="/" className="hover:text-[#102B46]">Home</Link>
             <span>/</span>
             <span className="text-slate-900 font-semibold">Sales Desk Leads</span>
           </nav>

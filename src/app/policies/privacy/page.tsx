@@ -5,8 +5,8 @@ import { COMPANY } from '@/data/company';
 import { ShieldCheck, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Asian Enterprises B2B Industrial Supply',
-  description: 'Privacy policy for Asian Enterprises regarding B2B customer quotation information, drawings, and communications.',
+  title: 'Privacy Policy | Gurudev Enterprise B2B Industrial Supply',
+  description: 'Privacy policy for Gurudev Enterprise regarding B2B customer quotation information, drawings, and communications.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B]">Home</Link>
+            <Link href="/" className="hover:text-[#102B46]">Home</Link>
             <span>/</span>
             <span className="text-slate-900 font-semibold">Privacy Policy</span>
           </nav>
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
         <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-900 flex items-start gap-2.5">
           <AlertCircle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
           <div>
-            <strong>Legal Notice:</strong> This is legally cautious draft content outlining Asian Enterprises' commercial data handling practices. Final terms are subject to formal legal review by the management of Asian Enterprises.
+            <strong>Legal Notice:</strong> This is legally cautious draft content outlining Gurudev Enterprise's commercial data handling practices. Final terms are subject to formal legal review by the management of Gurudev Enterprise.
           </div>
         </div>
 
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-sm font-bold text-slate-900">1. Commercial Context</h2>
             <p>
-              ASIAN ENTERPRISES (&ldquo;the Company&rdquo;) operates a Business-to-Business (B2B) industrial procurement, trading, and sourcing service. We collect commercial contact and project specification data solely to prepare quotations, verify supplier stock, coordinate freight dispatches, and issue tax-compliant commercial invoices.
+              GURUDEV ENTERPRISE (&ldquo;the Company&rdquo;) operates a Business-to-Business (B2B) industrial procurement, trading, and sourcing service. We collect commercial contact and project specification data solely to prepare quotations, verify supplier stock, coordinate freight dispatches, and issue tax-compliant commercial invoices.
             </p>
           </section>
 
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-sm font-bold text-slate-900">4. Document & Data Protection</h2>
             <p>
-              Customer BOQs, SLDs, and technical drawing files uploaded to our portal are stored in protected server directories with access restricted to Asian Enterprises procurement and engineering staff. We do not sell, rent, or publicly disclose customer project specifications.
+              Customer BOQs, SLDs, and technical drawing files uploaded to our portal are stored in protected server directories with access restricted to Gurudev Enterprise procurement and engineering staff. We do not sell, rent, or publicly disclose customer project specifications.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-sm font-bold text-slate-900">5. Contact Information</h2>
             <p>
               For privacy inquiries or data update requests, contact our compliance desk at:<br />
-              <strong>Asian Enterprises</strong><br />
+              <strong>Gurudev Enterprise</strong><br />
               Email: {COMPANY.contact.email}<br />
               Address: {COMPANY.mainOperations.fullAddress}
             </p>

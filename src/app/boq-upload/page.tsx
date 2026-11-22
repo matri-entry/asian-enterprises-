@@ -6,7 +6,7 @@ import { FileSpreadsheet, Lock, CheckCircle2, ShieldCheck, HelpCircle } from 'lu
 import { COMPANY } from '@/data/company';
 
 export const metadata: Metadata = {
-  title: 'Bulk BOQ & BOM Upload | Asian Enterprises Industrial Procurement',
+  title: 'Bulk BOQ & BOM Upload | Gurudev Enterprise Industrial Procurement',
   description: 'Upload your turnkey electrical Bill of Quantities (BOQ), tender schedule, or material estimate for competitive multi-category industrial pricing.',
 };
 
@@ -17,7 +17,7 @@ export default function BOQUploadPage() {
         {/* Breadcrumb & Header */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -28,14 +28,14 @@ export default function BOQUploadPage() {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
-              <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+              <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
                 Project & Infrastructure Sourcing
               </span>
               <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
                 Submit Project Bill of Quantities (BOQ)
               </h1>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl leading-relaxed">
-                Save dozens of vendor inquiries by submitting your complete project material list. Asian Enterprises aggregates quotes across switchgear, HT/LT cables, earthing, lighting, and hardware into one single commercial proposal.
+                Save dozens of vendor inquiries by submitting your complete project material list. Gurudev Enterprise aggregates quotes across switchgear, HT/LT cables, earthing, lighting, and hardware into one single commercial proposal.
               </p>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function BOQUploadPage() {
         {/* Security & Process Guarantees */}
         <div className="bg-white rounded-xl p-5 border border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-600">
           <div className="flex items-start gap-3">
-            <Lock className="w-5 h-5 text-[#0B2D5B] shrink-0 mt-0.5" />
+            <Lock className="w-5 h-5 text-[#102B46] shrink-0 mt-0.5" />
             <div>
               <strong className="text-slate-900 block font-bold">Confidential Storage</strong>
               <span>Files are stored privately in non-public folders and never shared publicly.</span>
@@ -60,7 +60,7 @@ export default function BOQUploadPage() {
           </div>
 
           <div className="flex items-start gap-3">
-            <ShieldCheck className="w-5 h-5 text-[#F05A28] shrink-0 mt-0.5" />
+            <ShieldCheck className="w-5 h-5 text-[#F28C28] shrink-0 mt-0.5" />
             <div>
               <strong className="text-slate-900 block font-bold">Consolidated Pricing</strong>
               <span>Single tax invoice and scheduled dispatches matching site milestones.</span>

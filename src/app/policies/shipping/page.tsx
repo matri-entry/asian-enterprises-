@@ -5,8 +5,8 @@ import { COMPANY } from '@/data/company';
 import { Truck, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Shipping & Delivery Policy | Asian Enterprises B2B Pan-India Logistics',
-  description: 'Pan-India logistics, freight terms, transit insurance, and dispatch procedures for industrial materials supplied by Asian Enterprises.',
+  title: 'Shipping & Delivery Policy | Gurudev Enterprise B2B Pan-India Logistics',
+  description: 'Pan-India logistics, freight terms, transit insurance, and dispatch procedures for industrial materials supplied by Gurudev Enterprise.',
 };
 
 export default function ShippingPolicyPage() {
@@ -15,7 +15,7 @@ export default function ShippingPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B]">Home</Link>
+            <Link href="/" className="hover:text-[#102B46]">Home</Link>
             <span>/</span>
             <span className="text-slate-900 font-semibold">Shipping & Delivery Policy</span>
           </nav>
@@ -27,7 +27,7 @@ export default function ShippingPolicyPage() {
           <section className="space-y-2">
             <h2 className="text-sm font-bold text-slate-900">1. Pan-India Delivery Coverage</h2>
             <p>
-              Asian Enterprises arranges dispatches to industrial sites, SEZ zones, plant facilities, and project warehouses across all states and Union Territories in India through vetted third-party logistics (3PL) partners and dedicated freight carriers.
+              Gurudev Enterprise arranges dispatches to industrial sites, SEZ zones, plant facilities, and project warehouses across all states and Union Territories in India through vetted third-party logistics (3PL) partners and dedicated freight carriers.
             </p>
           </section>
 
@@ -38,7 +38,7 @@ export default function ShippingPolicyPage() {
             </p>
             <ul className="list-disc pl-5 space-y-1 text-slate-600">
               <li><strong>Ex-Works / Ex-Godown:</strong> Customer arranges own transport pickup from our Bengaluru operations or designated supplier hub.</li>
-              <li><strong>FOR Destination (Freight Paid / To-Pay):</strong> Transport arranged by Asian Enterprises with freight billed on tax invoice or paid by customer upon site delivery as per quotation agreement.</li>
+              <li><strong>FOR Destination (Freight Paid / To-Pay):</strong> Transport arranged by Gurudev Enterprise with freight billed on tax invoice or paid by customer upon site delivery as per quotation agreement.</li>
             </ul>
           </section>
 

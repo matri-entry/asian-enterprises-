@@ -139,11 +139,11 @@ export default function LeadsDashboardClient() {
   if (!isAuthenticated) {
     return (
       <div className="max-w-md mx-auto my-16 bg-white rounded-2xl border border-slate-200 p-8 shadow-xl">
-        <div className="w-12 h-12 bg-blue-50 text-[#0B2D5B] rounded-xl flex items-center justify-center mx-auto mb-4">
+        <div className="w-12 h-12 bg-blue-50 text-[#102B46] rounded-xl flex items-center justify-center mx-auto mb-4">
           <Lock className="w-6 h-6" />
         </div>
         <h2 className="text-xl font-bold text-slate-900 text-center mb-1">
-          Asian Enterprises Sales Desk
+          Gurudev Enterprise Sales Desk
         </h2>
         <p className="text-xs text-slate-500 text-center mb-6">
           Authorized internal portal for commercial inquiry and RFQ management.
@@ -165,18 +165,18 @@ export default function LeadsDashboardClient() {
               value={passkey}
               onChange={(e) => setPasskey(e.target.value)}
               placeholder="Enter authorization key..."
-              className="w-full px-3.5 py-2.5 text-xs rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 text-xs rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
               autoFocus
             />
             <span className="text-[11px] text-slate-400 mt-1 block">
-              Default internal access key: <code className="bg-slate-100 px-1 py-0.5 rounded text-[#0B2D5B]">asian2026</code>
+              Default internal access key: <code className="bg-slate-100 px-1 py-0.5 rounded text-[#102B46]">gurudev2026</code>
             </span>
           </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2.5 bg-[#0B2D5B] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
+            className="w-full py-2.5 bg-[#102B46] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
           >
             {loading ? 'Authenticating...' : 'Access Lead Desk'}
           </button>
@@ -225,7 +225,7 @@ export default function LeadsDashboardClient() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by ID, company name, contact, email..."
-            className="w-full pl-9 pr-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B] bg-white"
+            className="w-full pl-9 pr-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46] bg-white"
           />
         </div>
 
@@ -233,7 +233,7 @@ export default function LeadsDashboardClient() {
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B] bg-white font-medium"
+            className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46] bg-white font-medium"
           >
             <option value="ALL">All Statuses ({leads.length})</option>
             {STATUS_OPTIONS.map((st) => (
@@ -248,7 +248,7 @@ export default function LeadsDashboardClient() {
           <select
             value={typeFilter}
             onChange={(e) => setTypeFilter(e.target.value)}
-            className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B] bg-white font-medium"
+            className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46] bg-white font-medium"
           >
             <option value="ALL">All Enquiry Types</option>
             <option value="RFQ">RFQ (Online Multi-Item)</option>
@@ -281,11 +281,11 @@ export default function LeadsDashboardClient() {
                     key={lead.id}
                     onClick={() => setSelectedLead(lead)}
                     className={`p-4 cursor-pointer transition-colors text-xs ${
-                      isSelected ? 'bg-blue-50/70 border-l-4 border-[#0B2D5B]' : 'hover:bg-slate-50'
+                      isSelected ? 'bg-blue-50/70 border-l-4 border-[#102B46]' : 'hover:bg-slate-50'
                     }`}
                   >
                     <div className="flex items-center justify-between mb-1.5">
-                      <span className="font-mono font-bold text-[#0B2D5B]">
+                      <span className="font-mono font-bold text-[#102B46]">
                         {lead.id}
                       </span>
                       <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
@@ -323,7 +323,7 @@ export default function LeadsDashboardClient() {
               <div className="border-b border-slate-200 pb-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="font-mono font-bold text-base text-[#0B2D5B]">
+                    <span className="font-mono font-bold text-base text-[#102B46]">
                       {selectedLead.id}
                     </span>
                     <span className="text-[10px] font-bold uppercase bg-slate-100 text-slate-700 px-2 py-0.5 rounded">
@@ -342,7 +342,7 @@ export default function LeadsDashboardClient() {
                     value={selectedLead.status}
                     disabled={updatingStatus}
                     onChange={(e) => handleStatusChange(selectedLead.id, e.target.value as LeadStatus)}
-                    className="px-2.5 py-1.5 rounded-md border border-slate-300 font-bold text-xs bg-white text-[#0B2D5B] focus:ring-2 focus:ring-[#0B2D5B]"
+                    className="px-2.5 py-1.5 rounded-md border border-slate-300 font-bold text-xs bg-white text-[#102B46] focus:ring-2 focus:ring-[#102B46]"
                   >
                     {STATUS_OPTIONS.map((st) => (
                       <option key={st} value={st}>{st}</option>
@@ -367,7 +367,7 @@ export default function LeadsDashboardClient() {
                   </div>
                   <div>
                     <span className="text-slate-400 block text-[10px]">Email</span>
-                    <a href={`mailto:${selectedLead.customer.email}`} className="text-[#0B2D5B] hover:underline font-mono">
+                    <a href={`mailto:${selectedLead.customer.email}`} className="text-[#102B46] hover:underline font-mono">
                       {selectedLead.customer.email}
                     </a>
                   </div>
@@ -478,11 +478,11 @@ export default function LeadsDashboardClient() {
                     value={newNote}
                     onChange={(e) => setNewNote(e.target.value)}
                     placeholder="Add follow-up note (e.g. Sent supplier RFQ to Polycab / L&T distributor)..."
-                    className="flex-1 px-3 py-1.5 rounded border border-slate-300 text-xs focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="flex-1 px-3 py-1.5 rounded border border-slate-300 text-xs focus:ring-1 focus:ring-[#102B46]"
                   />
                   <button
                     onClick={() => handleAddNote(selectedLead.id)}
-                    className="px-4 py-1.5 bg-[#0B2D5B] text-white font-bold rounded text-xs hover:bg-blue-900 transition-colors"
+                    className="px-4 py-1.5 bg-[#102B46] text-white font-bold rounded text-xs hover:bg-blue-900 transition-colors"
                   >
                     Add Note
                   </button>

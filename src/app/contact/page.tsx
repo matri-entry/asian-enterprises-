@@ -16,8 +16,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Asian Enterprises | Bengaluru HQ & Jaipur Sales Desk',
-  description: 'Get in touch with Asian Enterprises for industrial product quotations, bulk BOQs, and multi-category sourcing inquiries across India.',
+  title: 'Contact Gurudev Enterprise | Bengaluru Office & Pan-India Sales Desk',
+  description: 'Get in touch with Gurudev Enterprise for industrial electrical equipment, MRO supplies, bulk BOQs, and multi-category sourcing inquiries across India.',
 };
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
         {/* Breadcrumb & Header */}
         <div>
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-3">
-            <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+            <Link href="/" className="hover:text-[#102B46] transition-colors">
               Home
             </Link>
             <span>/</span>
@@ -36,14 +36,14 @@ export default function ContactPage() {
             </span>
           </nav>
 
-          <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block mb-1">
+          <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block mb-1">
             Commercial Desks
           </span>
           <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Contact ASIAN ENTERPRISES
+            Contact GURUDEV ENTERPRISE
           </h1>
           <p className="text-sm text-slate-600 mt-2 max-w-2xl leading-relaxed">
-            Reach out to our procurement desks in Bengaluru and Jaipur for quotations, delivery lead times, product availability, and vendor onboarding.
+            Reach out to our commercial procurement desk in Bengaluru for quotations, delivery lead times, product availability, and vendor onboarding.
           </p>
         </div>
 
@@ -53,8 +53,8 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-6">
             {/* Bengaluru Main Operations */}
             <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-3">
-              <div className="flex items-center gap-2 text-[#0B2D5B]">
-                <Building2 className="w-5 h-5 text-[#0B2D5B]" />
+              <div className="flex items-center gap-2 text-[#102B46]">
+                <Building2 className="w-5 h-5 text-[#102B46]" />
                 <h2 className="font-bold text-sm text-slate-900">
                   Main Operations (Bengaluru)
                 </h2>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                   href={COMPANY.mainOperations.googleMapsSearchUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-bold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1 transition-colors"
+                  className="font-bold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1 transition-colors"
                 >
                   <span>Google Maps</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -78,19 +78,19 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Jaipur Sales Office */}
+            {/* Pan-India Logistics Card */}
             <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-xs space-y-3">
-              <div className="flex items-center gap-2 text-[#F05A28]">
-                <MapPin className="w-5 h-5 text-[#F05A28]" />
+              <div className="flex items-center gap-2 text-[#0B9295]">
+                <MapPin className="w-5 h-5 text-[#0B9295]" />
                 <h2 className="font-bold text-sm text-slate-900">
-                  Regional Sales Office (Jaipur)
+                  Pan-India Supply & Freight Network
                 </h2>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Jaipur, Rajasthan &bull; Serving Northern and Western industrial zones including Rajasthan, NCR, and Gujarat corridors.
+                Coordinated dispatches to industrial sites, plant gates, EPC projects, and contractor warehouses across all states in India.
               </p>
               <p className="text-[11px] text-slate-400 italic">
-                * Commercial onboarding and site visits arranged upon project requirement.
+                * Commercial onboarding, material sampling, and site deliveries scheduled on confirmed orders.
               </p>
             </div>
 
@@ -102,25 +102,13 @@ export default function ContactPage() {
 
               <div className="space-y-2.5">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F05A28] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-orange-50 text-[#F28C28] flex items-center justify-center shrink-0">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-slate-400 block">Primary Telephone</span>
-                    <a href={`tel:${COMPANY.contact.primaryPhone}`} className="font-bold text-slate-900 hover:text-[#0B2D5B]">
+                    <span className="text-[11px] text-slate-400 block">Mobile Hotline (Call)</span>
+                    <a href={`tel:${COMPANY.contact.primaryPhone}`} className="font-bold text-slate-900 hover:text-[#102B46]">
                       {COMPANY.contact.primaryPhoneDisplay}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-blue-50 text-[#0B2D5B] flex items-center justify-center shrink-0">
-                    <Phone className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-[11px] text-slate-400 block">Secondary Direct</span>
-                    <a href={`tel:${COMPANY.contact.secondaryPhone}`} className="font-bold text-slate-900 hover:text-[#0B2D5B]">
-                      {COMPANY.contact.secondaryPhoneDisplay}
                     </a>
                   </div>
                 </div>
@@ -132,7 +120,7 @@ export default function ContactPage() {
                   <div>
                     <span className="text-[11px] text-slate-400 block">WhatsApp Sales</span>
                     <a 
-                      href={`https://wa.me/${COMPANY.contact.whatsappNumber}`}
+                      href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent("Hello Gurudev Enterprise, I have a requirement to discuss.")}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-bold text-emerald-700 hover:text-emerald-800"
@@ -148,7 +136,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-[11px] text-slate-400 block">Official Business Email</span>
-                    <a href={`mailto:${COMPANY.contact.email}`} className="font-bold text-slate-900 hover:text-[#0B2D5B]">
+                    <a href={`mailto:${COMPANY.contact.email}`} className="font-bold text-slate-900 hover:text-[#102B46]">
                       {COMPANY.contact.email}
                     </a>
                   </div>

@@ -1,31 +1,32 @@
 export interface CompanyDetails {
   brandName: string;
+  shortName: string;
+  category: string;
   tagline: string;
   subtitle: string;
-  previousBrand: string;
   registeredName: string;
   gstin: string;
   mainOperations: {
     city: string;
     state: string;
+    locality: string;
     address: string;
     pincode: string;
     fullAddress: string;
     googleMapsSearchUrl: string;
-  };
-  salesOffice: {
-    city: string;
-    state: string;
-    note: string;
+    coordinates: {
+      latitude: string;
+      longitude: string;
+    };
   };
   contact: {
     primaryPhone: string;
-    secondaryPhone: string;
     primaryPhoneDisplay: string;
-    secondaryPhoneDisplay: string;
     email: string;
     whatsappNumber: string;
     whatsappDisplay: string;
+    clickToCall: string;
+    clickToEmail: string;
   };
   businessHours: {
     days: string;
@@ -37,39 +38,40 @@ export interface CompanyDetails {
 }
 
 export const COMPANY: CompanyDetails = {
-  brandName: "ASIAN ENTERPRISES",
-  tagline: "Your Trusted Partner for Industrial Procurement",
-  subtitle: "Electrical products, industrial components and multi-category sourcing for businesses across India. Share your requirement and receive a tailored quotation from our team.",
-  previousBrand: "Krish Enterprise",
-  registeredName: "ASIAN ENTERPRISES",
-  gstin: "29OEJPK6031Q1ZI",
+  brandName: "GURUDEV ENTERPRISE",
+  shortName: "Gurudev Enterprise",
+  category: "Industrial Electrical Equipment & MRO Supplier",
+  tagline: "Industrial Electrical Equipment & MRO Supplier in Bengaluru",
+  subtitle: "Supplying industrial electrical equipment, switchgear, power cables, electrical panels, lighting and MRO products to factories, contractors and businesses in Bengaluru and across India.",
+  registeredName: "GURUDEV ENTERPRISE",
+  gstin: "29EVPPR9281E1ZN",
   mainOperations: {
     city: "Bengaluru",
     state: "Karnataka",
-    address: "No.: 18/1, GMR Tower, 14th Main Begur Road, Hongasandra",
+    locality: "Bommanahalli",
+    address: "Ground Floor, WJ4G+Q43 Mantu Kumar, 259/3, Virat Nagar, Bommanahalli",
     pincode: "560068",
-    fullAddress: "No.: 18/1, GMR Tower, 14th Main Begur Road, Hongasandra, Bengaluru, Karnataka - 560068",
-    googleMapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=18%2F1+GMR+Tower+14th+Main+Begur+Road+Hongasandra+Bengaluru+560068"
-  },
-  salesOffice: {
-    city: "Jaipur",
-    state: "Rajasthan",
-    note: "Dedicated regional sales and client coordination office serving Northern and Western industrial corridors. (Direct facility address available upon request / commercial onboarding)"
+    fullAddress: "Ground Floor, WJ4G+Q43 Mantu Kumar, 259/3, Virat Nagar, Bommanahalli, Bengaluru, Karnataka 560068, India",
+    googleMapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Ground+Floor+259%2F3+Virat+Nagar+Bommanahalli+Bengaluru+560068",
+    coordinates: {
+      latitude: "12.9015",
+      longitude: "77.6325"
+    }
   },
   contact: {
-    primaryPhone: "+918619566149",
-    secondaryPhone: "+918197240584",
-    primaryPhoneDisplay: "+91 86195 66149",
-    secondaryPhoneDisplay: "+91 81972 40584",
-    email: "admin@asianenterprise.in",
-    whatsappNumber: "918619566149",
-    whatsappDisplay: "+91 86195 66149"
+    primaryPhone: "+918197240584",
+    primaryPhoneDisplay: "+91 81972 40584",
+    email: "gurudeventerprise.blr@gmail.com",
+    whatsappNumber: "918197240584",
+    whatsappDisplay: "+91 81972 40584",
+    clickToCall: "tel:+918197240584",
+    clickToEmail: "mailto:gurudeventerprise.blr@gmail.com"
   },
   businessHours: {
     days: "Monday – Saturday",
     hours: "9:00 AM – 7:00 PM",
     timezone: "IST"
   },
-  panIndiaDeliveryNote: "Supplying manufacturing plants, infrastructure projects, and industrial facilities across all Indian states and Union Territories through dependable freight and logistics partners.",
-  sourcingModelSummary: "Asian Enterprises operates an agile B2B procurement network combining project-ready inventory for fast-moving items with direct manufacturer and authorized distributor connections for comprehensive bill-of-materials sourcing."
+  panIndiaDeliveryNote: "Supplying manufacturing plants, infrastructure projects, and industrial facilities across Bengaluru, Karnataka, and pan-India through dependable freight and logistics partners.",
+  sourcingModelSummary: "Gurudev Enterprise operates an agile B2B procurement network combining project-ready inventory for fast-moving items with verified manufacturer and authorized distributor connections for comprehensive bill-of-materials sourcing."
 };

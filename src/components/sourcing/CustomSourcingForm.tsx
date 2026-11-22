@@ -77,16 +77,16 @@ export default function CustomSourcingForm() {
   if (successData) {
     return (
       <div className="bg-white rounded-2xl border border-slate-200 shadow-xl p-8 sm:p-12 text-center max-w-2xl mx-auto my-8">
-        <div className="w-16 h-16 bg-blue-100 text-[#0B2D5B] rounded-full flex items-center justify-center mx-auto mb-5">
-          <Search className="w-8 h-8 text-[#0B2D5B]" />
+        <div className="w-16 h-16 bg-blue-100 text-[#102B46] rounded-full flex items-center justify-center mx-auto mb-5">
+          <Search className="w-8 h-8 text-[#102B46]" />
         </div>
 
-        <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#0B2D5B] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+        <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#102B46] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
           Sourcing Requirement Logged
         </span>
 
         <h3 className="text-2xl font-black text-slate-900 mt-4 mb-2">
-          Sourcing Reference: <span className="text-[#F05A28]">{successData.sourcingId}</span>
+          Sourcing Reference: <span className="text-[#F28C28]">{successData.sourcingId}</span>
         </h3>
 
         <p className="text-sm text-slate-600 leading-relaxed max-w-lg mx-auto mb-6">
@@ -107,13 +107,13 @@ export default function CustomSourcingForm() {
             <span className="font-semibold">{formData.city || 'Pan-India'} - {formData.pincode}</span>
           </div>
           <div className="pt-1 text-slate-500 text-[11px]">
-            * Our procurement desks in Bengaluru and Jaipur are cross-referencing distributor networks. We will return with available make, lead time, and commercial quotation.
+            * Our procurement team in Bengaluru is cross-referencing distributor networks across India. We will return with available make, lead time, and commercial quotation.
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Asian Enterprises, I submitted custom sourcing ticket ${successData.sourcingId} for "${formData.productName}". Please check sourcing feasibility.`)}`}
+            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Gurudev Enterprise, I submitted custom sourcing ticket ${successData.sourcingId} for "${formData.productName}". Please check sourcing feasibility.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-xs flex items-center justify-center gap-2"
@@ -148,7 +148,7 @@ export default function CustomSourcingForm() {
       {/* Product Sourcing Requirement */}
       <div>
         <div className="flex items-center gap-2 border-b border-slate-200 pb-3 mb-6">
-          <Search className="w-5 h-5 text-[#F05A28]" />
+          <Search className="w-5 h-5 text-[#F28C28]" />
           <h3 className="text-base font-bold text-slate-900">
             1. Equipment / Component Specification
           </h3>
@@ -165,7 +165,7 @@ export default function CustomSourcingForm() {
               value={formData.productName}
               onChange={(e) => setFormData({ ...formData, productName: e.target.value })}
               placeholder="e.g. Explosion proof 3-phase motor 15kW or Specialized DIN-rail signal isolator"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -179,7 +179,7 @@ export default function CustomSourcingForm() {
               value={formData.quantity}
               onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
               placeholder="e.g. 5"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -190,7 +190,7 @@ export default function CustomSourcingForm() {
             <select
               value={formData.unit}
               onChange={(e) => setFormData({ ...formData, unit: e.target.value })}
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             >
               <option value="Units">Units / Nos</option>
               <option value="Sets">Sets</option>
@@ -209,7 +209,7 @@ export default function CustomSourcingForm() {
               value={formData.technicalRequirements}
               onChange={(e) => setFormData({ ...formData, technicalRequirements: e.target.value })}
               placeholder="Mention voltage, current, temperature class, enclosure IP rating, certification requirements (CE, ATEX, IS), or physical footprint constraints."
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -222,7 +222,7 @@ export default function CustomSourcingForm() {
               value={formData.manufacturerPreference}
               onChange={(e) => setFormData({ ...formData, manufacturerPreference: e.target.value })}
               placeholder="e.g. Siemens, ABB, Omron, or Best Available Equivalent"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -234,7 +234,7 @@ export default function CustomSourcingForm() {
               type="date"
               value={formData.requiredDeliveryDate}
               onChange={(e) => setFormData({ ...formData, requiredDeliveryDate: e.target.value })}
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function CustomSourcingForm() {
               value={formData.fullName}
               onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
               placeholder="e.g. Arvind Mehta"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -273,7 +273,7 @@ export default function CustomSourcingForm() {
               value={formData.companyName}
               onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
               placeholder="e.g. Sun Petrochemicals"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -287,7 +287,7 @@ export default function CustomSourcingForm() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               placeholder="e.g. arvind@sunpetro.com"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -301,7 +301,7 @@ export default function CustomSourcingForm() {
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="e.g. 9845012345"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -314,7 +314,7 @@ export default function CustomSourcingForm() {
               value={formData.city}
               onChange={(e) => setFormData({ ...formData, city: e.target.value })}
               placeholder="e.g. Dahej / Bengaluru"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -328,7 +328,7 @@ export default function CustomSourcingForm() {
               value={formData.pincode}
               onChange={(e) => setFormData({ ...formData, pincode: e.target.value })}
               placeholder="392130"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
         </div>
@@ -343,13 +343,13 @@ export default function CustomSourcingForm() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
           <span className="text-xs text-slate-500">
-            Standard catalogue items? <Link href="/rfq" className="text-[#0B2D5B] font-bold underline">Use Standard RFQ Form</Link>
+            Standard catalogue items? <Link href="/rfq" className="text-[#102B46] font-bold underline">Use Standard RFQ Form</Link>
           </span>
 
           <button
             type="submit"
             disabled={submitting}
-            className="w-full sm:w-auto px-8 py-3.5 bg-[#0B2D5B] hover:bg-blue-900 disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#102B46] hover:bg-[#0c2035] disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
           >
             {submitting ? (
               <>

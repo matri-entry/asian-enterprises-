@@ -15,7 +15,7 @@ import { COMPANY } from '@/data/company';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-b from-slate-900 via-[#0B2D5B] to-slate-900 text-white overflow-hidden py-16 lg:py-24">
+    <section className="relative bg-gradient-to-b from-slate-900 via-[#102B46] to-slate-900 text-white overflow-hidden py-16 lg:py-24">
       {/* Subtle industrial grid background */}
       <div 
         className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" 
@@ -26,8 +26,8 @@ export default function HeroSection() {
           {/* Main Hero Copy */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900/60 border border-blue-400/30 text-blue-200 text-xs font-semibold tracking-wide uppercase">
-              <span className="w-2 h-2 rounded-full bg-[#F05A28] animate-pulse" />
-              <span>B2B Industrial Trading & Sourcing</span>
+              <span className="w-2 h-2 rounded-full bg-[#F28C28] animate-pulse" />
+              <span>B2B Industrial Electrical & MRO Supplier</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
@@ -42,7 +42,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/rfq"
-                className="px-6 py-3.5 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-sm uppercase tracking-wider rounded-md shadow-lg transition-all duration-200 flex items-center gap-2 hover:scale-[1.02]"
+                className="px-6 py-3.5 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-sm uppercase tracking-wider rounded-md shadow-lg transition-all duration-200 flex items-center gap-2 hover:scale-[1.02]"
               >
                 <span>Request a Quote</span>
                 <ArrowRight className="w-4 h-4" />
@@ -59,7 +59,7 @@ export default function HeroSection() {
                 href="/boq-upload"
                 className="px-6 py-3.5 text-blue-200 hover:text-white font-semibold text-sm transition-colors flex items-center gap-2 underline underline-offset-4"
               >
-                <FileText className="w-4 h-4 text-[#F05A28]" />
+                <FileText className="w-4 h-4 text-[#F28C28]" />
                 <span>Upload Bulk BOQ</span>
               </Link>
             </div>
@@ -76,7 +76,7 @@ export default function HeroSection() {
               </div>
               <div className="space-y-1">
                 <span className="font-bold text-white block">Pan-India Reach</span>
-                <span className="text-slate-300 text-[11px] block">Bengaluru HQ & Jaipur desk</span>
+                <span className="text-slate-300 text-[11px] block">Bengaluru HQ & Pan-India</span>
               </div>
               <div className="space-y-1">
                 <span className="font-bold text-white block">Clear Quotations</span>
@@ -90,7 +90,7 @@ export default function HeroSection() {
             <div className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 text-slate-800 border border-slate-100">
               <div className="border-b border-slate-100 pb-4 mb-5">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#0B2D5B] bg-blue-50 px-2.5 py-1 rounded">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#102B46] bg-blue-50 px-2.5 py-1 rounded">
                     Quick Industrial Enquiry
                   </span>
                   <span className="text-xs text-slate-400 font-mono">Pan-India Sourcing</span>
@@ -105,7 +105,7 @@ export default function HeroSection() {
 
               <div className="space-y-3.5">
                 <div className="p-3.5 rounded-lg bg-slate-50 border border-slate-200/80">
-                  <span className="text-xs font-bold text-[#0B2D5B] block mb-1">
+                  <span className="text-xs font-bold text-[#102B46] block mb-1">
                     Multi-Product RFQ Portal
                   </span>
                   <p className="text-xs text-slate-600 mb-2.5">
@@ -113,7 +113,7 @@ export default function HeroSection() {
                   </p>
                   <Link
                     href="/rfq"
-                    className="w-full py-2 bg-[#0B2D5B] hover:bg-blue-900 text-white text-xs font-bold rounded flex items-center justify-center gap-1.5 transition-colors"
+                    className="w-full py-2 bg-[#102B46] hover:bg-blue-900 text-white text-xs font-bold rounded flex items-center justify-center gap-1.5 transition-colors"
                   >
                     <span>Open Multi-Item RFQ Builder</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -121,7 +121,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="p-3.5 rounded-lg bg-orange-50/60 border border-orange-200/80">
-                  <span className="text-xs font-bold text-[#F05A28] block mb-1">
+                  <span className="text-xs font-bold text-[#F28C28] block mb-1">
                     Project BOQ / Excel Upload
                   </span>
                   <p className="text-xs text-slate-600 mb-2.5">
@@ -129,7 +129,7 @@ export default function HeroSection() {
                   </p>
                   <Link
                     href="/boq-upload"
-                    className="w-full py-2 bg-[#F05A28] hover:bg-[#D94819] text-white text-xs font-bold rounded flex items-center justify-center gap-1.5 transition-colors"
+                    className="w-full py-2 bg-[#F28C28] hover:bg-[#D9771E] text-white text-xs font-bold rounded flex items-center justify-center gap-1.5 transition-colors"
                   >
                     <FileText className="w-3.5 h-3.5" />
                     <span>Upload Project File (PDF / XLSX)</span>
@@ -138,7 +138,7 @@ export default function HeroSection() {
 
                 <div className="pt-2 text-center">
                   <span className="text-[11px] text-slate-400">
-                    Need immediate technical assistance? Call <a href={`tel:${COMPANY.contact.primaryPhone}`} className="text-[#0B2D5B] font-bold hover:underline">{COMPANY.contact.primaryPhoneDisplay}</a>
+                    Need immediate technical assistance? Call <a href={`tel:${COMPANY.contact.primaryPhone}`} className="text-[#102B46] font-bold hover:underline">{COMPANY.contact.primaryPhoneDisplay}</a>
                   </span>
                 </div>
               </div>

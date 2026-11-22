@@ -34,10 +34,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!category) return { title: 'Category Not Found' };
 
   return {
-    title: `${category.title} | Asian Enterprises Pan-India Sourcing`,
-    description: `Procure ${category.title} for industrial plants and infrastructure projects. Fast quotations from Asian Enterprises in Bengaluru & Jaipur.`,
+    title: `${category.title} | Gurudev Enterprise Pan-India Sourcing`,
+    description: `Procure ${category.title} for industrial plants and infrastructure projects. Fast quotations from Gurudev Enterprise in Bengaluru.`,
     openGraph: {
-      title: `${category.title} - Asian Enterprises`,
+      title: `${category.title} - Gurudev Enterprise`,
       description: category.description,
       images: [category.image]
     }
@@ -56,11 +56,11 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
-          <Link href="/" className="hover:text-[#0B2D5B] transition-colors">
+          <Link href="/" className="hover:text-[#102B46] transition-colors">
             Home
           </Link>
           <span>/</span>
-          <Link href="/products" className="hover:text-[#0B2D5B] transition-colors">
+          <Link href="/products" className="hover:text-[#102B46] transition-colors">
             Categories
           </Link>
           <span>/</span>
@@ -71,7 +71,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 p-6 sm:p-10 space-y-4">
-              <span className="text-xs font-bold text-[#F05A28] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-[#F28C28] uppercase tracking-wider block">
                 Industrial Category Profile
               </span>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
@@ -95,7 +95,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               <div className="flex flex-wrap items-center gap-3 pt-4">
                 <Link
                   href={`/rfq?category=${encodeURIComponent(category.title)}`}
-                  className="px-5 py-2.5 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wider rounded shadow-xs transition-colors"
+                  className="px-5 py-2.5 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wider rounded shadow-xs transition-colors"
                 >
                   Request Category Quotation
                 </Link>
@@ -103,7 +103,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   href="/boq-upload"
                   className="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded transition-colors flex items-center gap-2"
                 >
-                  <FileText className="w-4 h-4 text-[#0B2D5B]" />
+                  <FileText className="w-4 h-4 text-[#102B46]" />
                   <span>Upload BOQ File</span>
                 </Link>
               </div>
@@ -120,7 +120,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 text-white">
-                <span className="text-xs font-mono bg-[#0B2D5B]/90 px-2.5 py-1 rounded backdrop-blur-xs">
+                <span className="text-xs font-mono bg-[#102B46]/90 px-2.5 py-1 rounded backdrop-blur-xs">
                   Authentic Catalogue Line
                 </span>
               </div>
@@ -158,7 +158,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </div>
             <Link
               href="/products"
-              className="text-xs font-bold text-[#0B2D5B] hover:text-[#F05A28] flex items-center gap-1"
+              className="text-xs font-bold text-[#102B46] hover:text-[#F28C28] flex items-center gap-1"
             >
               <span>All Categories</span>
               <ChevronRight className="w-4 h-4" />
@@ -178,7 +178,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               </p>
               <Link
                 href={`/rfq?category=${encodeURIComponent(category.title)}`}
-                className="px-4 py-2 bg-[#F05A28] text-white text-xs font-bold uppercase rounded inline-block"
+                className="px-4 py-2 bg-[#F28C28] text-white text-xs font-bold uppercase rounded inline-block"
               >
                 Request Quotation for {category.shortTitle}
               </Link>
@@ -187,7 +187,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </div>
 
         {/* Bottom Category Procurement CTA */}
-        <div className="bg-[#0B2D5B] rounded-xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-[#102B46] rounded-xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-lg font-bold text-white">
               Looking for a custom rating or unlisted make in {category.shortTitle}?
@@ -199,7 +199,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/custom-sourcing"
-              className="px-5 py-2.5 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
+              className="px-5 py-2.5 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
             >
               Submit Custom Sourcing Request
             </Link>

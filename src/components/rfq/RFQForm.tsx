@@ -168,7 +168,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
         </span>
 
         <h3 className="text-2xl font-black text-slate-900 mt-4 mb-2">
-          RFQ Reference: <span className="text-[#0B2D5B]">{successData.rfqId}</span>
+          RFQ Reference: <span className="text-[#102B46]">{successData.rfqId}</span>
         </h3>
 
         <p className="text-sm text-slate-600 leading-relaxed max-w-lg mx-auto mb-8">
@@ -190,13 +190,13 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
           </div>
           <div className="flex justify-between">
             <span className="text-slate-500">Line Items Sourced:</span>
-            <span className="font-bold text-[#F05A28]">{items.length} Product(s)</span>
+            <span className="font-bold text-[#F28C28]">{items.length} Product(s)</span>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Asian Enterprises, I just submitted RFQ Reference ${successData.rfqId} for ${customer.companyName}. Please confirm receipt.`)}`}
+            href={`https://wa.me/${COMPANY.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Gurudev Enterprise, I just submitted RFQ Reference ${successData.rfqId} for ${customer.companyName}. Please confirm receipt.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-xs flex items-center justify-center gap-2"
@@ -231,7 +231,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
       {/* Section 1: Customer & Company Details */}
       <div>
         <div className="flex items-center gap-2 border-b border-slate-200 pb-3 mb-6">
-          <Building className="w-5 h-5 text-[#0B2D5B]" />
+          <Building className="w-5 h-5 text-[#102B46]" />
           <h3 className="text-base font-bold text-slate-900">
             1. Company & Contact Details
           </h3>
@@ -248,7 +248,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={customer.fullName}
               onChange={(e) => setCustomer({ ...customer, fullName: e.target.value })}
               placeholder="e.g. Ramesh Sharma"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -262,7 +262,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={customer.companyName}
               onChange={(e) => setCustomer({ ...customer, companyName: e.target.value })}
               placeholder="e.g. Apex Engineering Ltd"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -276,7 +276,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={customer.email}
               onChange={(e) => setCustomer({ ...customer, email: e.target.value })}
               placeholder="e.g. procurement@apex.com"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -290,7 +290,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={customer.phone}
               onChange={(e) => setCustomer({ ...customer, phone: e.target.value })}
               placeholder="e.g. 9876543210"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -303,7 +303,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={customer.gstin}
               onChange={(e) => setCustomer({ ...customer, gstin: e.target.value.toUpperCase() })}
               placeholder="e.g. 29ABCDE1234F1Z5"
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 uppercase focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 uppercase focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
 
@@ -318,7 +318,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                 value={customer.city}
                 onChange={(e) => setCustomer({ ...customer, city: e.target.value })}
                 placeholder="e.g. Bengaluru"
-                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
               />
             </div>
             <div>
@@ -332,7 +332,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                 value={customer.pincode}
                 onChange={(e) => setCustomer({ ...customer, pincode: e.target.value })}
                 placeholder="560068"
-                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+                className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
               />
             </div>
           </div>
@@ -343,7 +343,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
       <div>
         <div className="flex items-center justify-between border-b border-slate-200 pb-3 mb-6">
           <div className="flex items-center gap-2">
-            <FileText className="w-5 h-5 text-[#0B2D5B]" />
+            <FileText className="w-5 h-5 text-[#102B46]" />
             <h3 className="text-base font-bold text-slate-900">
               2. Product Line Items ({items.length})
             </h3>
@@ -351,7 +351,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
           <button
             type="button"
             onClick={handleAddItem}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-[#0B2D5B] hover:bg-blue-100 font-bold text-xs rounded-md border border-blue-200 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-[#102B46] hover:bg-blue-100 font-bold text-xs rounded-md border border-blue-200 transition-colors"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Add Another Product</span>
@@ -391,7 +391,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                     value={item.productName}
                     onChange={(e) => handleItemChange(idx, 'productName', e.target.value)}
                     placeholder="e.g. 63A 4P 36kA MCCB or 3.5C x 185 sqmm XLPE Cable"
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   />
                 </div>
 
@@ -402,7 +402,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                   <select
                     value={item.category}
                     onChange={(e) => handleItemChange(idx, 'category', e.target.value)}
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   >
                     <option value="">Select Category...</option>
                     {CATEGORIES.map((cat) => (
@@ -423,7 +423,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                     value={item.quantity}
                     onChange={(e) => handleItemChange(idx, 'quantity', e.target.value)}
                     placeholder="e.g. 50"
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   />
                 </div>
 
@@ -434,7 +434,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                   <select
                     value={item.unit}
                     onChange={(e) => handleItemChange(idx, 'unit', e.target.value)}
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   >
                     <option value="Pieces">Pieces / Nos</option>
                     <option value="Meters">Meters</option>
@@ -455,7 +455,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                     value={item.technicalSpecs}
                     onChange={(e) => handleItemChange(idx, 'technicalSpecs', e.target.value)}
                     placeholder="e.g. Breaking capacity, IP rating, voltage, conductor size, temperature class"
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   />
                 </div>
 
@@ -468,7 +468,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
                     value={item.brandPreference}
                     onChange={(e) => handleItemChange(idx, 'brandPreference', e.target.value)}
                     placeholder="e.g. L&T, Schneider, Polycab, or Equivalent"
-                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#0B2D5B]"
+                    className="w-full px-3 py-2 rounded-md bg-white border border-slate-300 focus:outline-hidden focus:ring-1 focus:ring-[#102B46]"
                   />
                 </div>
               </div>
@@ -480,7 +480,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
           <button
             type="button"
             onClick={handleAddItem}
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#0B2D5B] hover:text-[#F05A28] transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-bold text-[#102B46] hover:text-[#F28C28] transition-colors"
           >
             <Plus className="w-4 h-4" />
             <span>+ Add another line item to this quotation</span>
@@ -491,7 +491,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
       {/* Section 3: Project Logistics & Notes */}
       <div>
         <div className="flex items-center gap-2 border-b border-slate-200 pb-3 mb-6">
-          <Calendar className="w-5 h-5 text-[#0B2D5B]" />
+          <Calendar className="w-5 h-5 text-[#102B46]" />
           <h3 className="text-base font-bold text-slate-900">
             3. Delivery Schedule & Additional Notes
           </h3>
@@ -506,7 +506,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               type="date"
               value={requiredDeliveryDate}
               onChange={(e) => setRequiredDeliveryDate(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
             <span className="text-[11px] text-slate-400 mt-1 block">
               Helps us prioritize immediate shutdown or commissioning orders.
@@ -522,7 +522,7 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
               value={additionalNotes}
               onChange={(e) => setAdditionalNotes(e.target.value)}
               placeholder="e.g. Staggered dispatch required, test certificate needed, specific site unloading gate instructions."
-              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+              className="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
             />
           </div>
         </div>
@@ -536,22 +536,22 @@ export default function RFQForm({ initialCategory, initialProductName }: RFQForm
             required
             checked={consentAcknowledged}
             onChange={(e) => setConsentAcknowledged(e.target.checked)}
-            className="mt-0.5 rounded text-[#0B2D5B] focus:ring-[#0B2D5B]"
+            className="mt-0.5 rounded text-[#102B46] focus:ring-[#102B46]"
           />
           <span>
-            I acknowledge that Asian Enterprises will review the submitted requirement with its supplier network to prepare an official commercial quotation. Submitted details will be kept confidential and used solely for RFQ processing.
+            I acknowledge that Gurudev Enterprise will review the submitted requirement with its supplier network to prepare an official commercial quotation. Submitted details will be kept confidential and used solely for RFQ processing.
           </span>
         </label>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
           <span className="text-xs text-slate-500">
-            Need to upload a complete spreadsheet instead? <Link href="/boq-upload" className="text-[#0B2D5B] font-bold underline">Use BOQ Upload</Link>
+            Need to upload a complete spreadsheet instead? <Link href="/boq-upload" className="text-[#102B46] font-bold underline">Use BOQ Upload</Link>
           </span>
 
           <button
             type="submit"
             disabled={submitting}
-            className="w-full sm:w-auto px-8 py-3.5 bg-[#F05A28] hover:bg-[#D94819] disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
+            className="w-full sm:w-auto px-8 py-3.5 bg-[#F28C28] hover:bg-[#D9771E] disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded-md shadow-md transition-all flex items-center justify-center gap-2"
           >
             {submitting ? (
               <>

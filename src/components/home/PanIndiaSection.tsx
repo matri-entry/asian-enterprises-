@@ -10,8 +10,8 @@ export default function PanIndiaSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Context & Approach */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#0B2D5B] text-xs font-bold uppercase rounded tracking-wider">
-              <Truck className="w-3.5 h-3.5 text-[#F05A28]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-[#102B46] text-xs font-bold uppercase rounded tracking-wider">
+              <Truck className="w-3.5 h-3.5 text-[#F28C28]" />
               <span>Pan-India Logistics & Sourcing Network</span>
             </div>
 
@@ -20,7 +20,7 @@ export default function PanIndiaSection() {
             </h2>
 
             <p className="text-sm text-slate-600 leading-relaxed">
-              Asian Enterprises operates central procurement and commercial operations from <strong>Bengaluru, Karnataka</strong> with a dedicated regional sales office in <strong>Jaipur, Rajasthan</strong>. We coordinate with verified manufacturers, master distributors, and reliable freight carriers to supply project sites and manufacturing facilities across India.
+              Gurudev Enterprise operates central procurement and commercial distribution from <strong>Bengaluru, Karnataka (Bommanahalli)</strong>. We coordinate with verified manufacturers, master distributors, and reliable freight carriers to supply project sites and manufacturing facilities across India.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -29,22 +29,22 @@ export default function PanIndiaSection() {
                   Main Operations (Bengaluru)
                 </span>
                 <p className="text-xs text-slate-500 leading-relaxed">
-                  Headquarters, procurement coordination, vendor relationships, and southern regional dispatches.
+                  Central office, procurement coordination, vendor relationships, and dispatch operations.
                 </p>
                 <div className="mt-2 text-[11px] font-mono text-slate-400">
-                  Hongasandra, Bengaluru - 560068
+                  Bommanahalli, Bengaluru - 560068
                 </div>
               </div>
 
               <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
                 <span className="font-bold text-slate-900 text-xs block mb-1">
-                  Regional Sales (Jaipur)
+                  Pan-India Supply & Freight
                 </span>
                 <p className="text-xs text-slate-500 leading-relaxed">
-                  Client coordination desk serving industrial corridors in Rajasthan, NCR, Gujarat, and Northern India.
+                  Coordinated road freight, PTL/FTL logistics, and express parcel dispatch to project sites nationwide.
                 </p>
                 <div className="mt-2 text-[11px] font-mono text-slate-400">
-                  Jaipur Regional Desk
+                  Pan-India Dispatch Network
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function PanIndiaSection() {
             <div className="pt-2">
               <Link
                 href="/rfq"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0B2D5B] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded-md transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#102B46] hover:bg-blue-900 text-white font-bold text-xs uppercase tracking-wider rounded-md transition-colors"
               >
                 <span>Request Project Quotation</span>
                 <ArrowRight className="w-4 h-4" />
@@ -76,7 +76,7 @@ export default function PanIndiaSection() {
           </div>
 
           {/* Right Column: Industrial Regions Served */}
-          <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-[#0B2D5B] text-white p-8 rounded-2xl shadow-xl">
+          <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-[#102B46] text-white p-8 rounded-2xl shadow-xl">
             <h3 className="text-lg font-bold text-white mb-2">
               Primary Industrial Zones
             </h3>
@@ -85,7 +85,7 @@ export default function PanIndiaSection() {
             </p>
 
             <div className="space-y-4 text-xs">
-              <div className="border-l-2 border-[#F05A28] pl-3">
+              <div className="border-l-2 border-[#F28C28] pl-3">
                 <strong className="text-white block font-semibold">
                   Southern Zone
                 </strong>
@@ -94,16 +94,16 @@ export default function PanIndiaSection() {
                 </span>
               </div>
 
-              <div className="border-l-2 border-[#F05A28] pl-3">
+              <div className="border-l-2 border-[#F28C28] pl-3">
                 <strong className="text-white block font-semibold">
                   Western Zone
                 </strong>
                 <span className="text-slate-300 text-[11px]">
-                  Jaipur, Ahmedabad, Vadodara, Surat, Mumbai, Pune, Pimpri-Chinchwad
+                  Ahmedabad, Vadodara, Surat, Mumbai, Pune, Pimpri-Chinchwad, Jaipur
                 </span>
               </div>
 
-              <div className="border-l-2 border-[#F05A28] pl-3">
+              <div className="border-l-2 border-[#F28C28] pl-3">
                 <strong className="text-white block font-semibold">
                   Northern Zone
                 </strong>
@@ -112,7 +112,7 @@ export default function PanIndiaSection() {
                 </span>
               </div>
 
-              <div className="border-l-2 border-[#F05A28] pl-3">
+              <div className="border-l-2 border-[#F28C28] pl-3">
                 <strong className="text-white block font-semibold">
                   Eastern & Central Zones
                 </strong>

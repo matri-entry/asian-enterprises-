@@ -71,7 +71,7 @@ export default function ProductListClient({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search products, switches, cables, panels, instruments, fast-moving items..."
-              className="w-full pl-10 pr-4 py-2.5 text-xs rounded-lg border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B] bg-slate-50/50"
+              className="w-full pl-10 pr-4 py-2.5 text-xs rounded-lg border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46] bg-slate-50/50"
             />
             {searchQuery && (
               <button
@@ -116,7 +116,7 @@ export default function ProductListClient({
             onClick={() => setSelectedCategory('all')}
             className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors shrink-0 ${
               selectedCategory === 'all'
-                ? 'bg-[#0B2D5B] text-white shadow-xs'
+                ? 'bg-[#102B46] text-white shadow-xs'
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
@@ -132,7 +132,7 @@ export default function ProductListClient({
                 onClick={() => setSelectedCategory(cat.slug)}
                 className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-colors shrink-0 ${
                   isSelected
-                    ? 'bg-[#0B2D5B] text-white shadow-xs'
+                    ? 'bg-[#102B46] text-white shadow-xs'
                     : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                 }`}
               >
@@ -177,7 +177,7 @@ export default function ProductListClient({
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
               href="/custom-sourcing"
-              className="w-full sm:w-auto px-4 py-2 bg-[#0B2D5B] hover:bg-blue-900 text-white font-bold text-xs uppercase rounded transition-colors"
+              className="w-full sm:w-auto px-4 py-2 bg-[#102B46] hover:bg-blue-900 text-white font-bold text-xs uppercase rounded transition-colors"
             >
               Submit Custom Sourcing Request
             </Link>
@@ -192,19 +192,19 @@ export default function ProductListClient({
       )}
 
       {/* Bottom Procurement Banner */}
-      <div className="bg-gradient-to-r from-[#0B2D5B] to-slate-900 rounded-xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+      <div className="bg-gradient-to-r from-[#102B46] to-slate-900 rounded-xl p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
         <div>
           <h3 className="text-lg font-bold text-white">
             Need pricing on multiple product lines or turnkey contractor package?
           </h3>
           <p className="text-xs text-slate-300 mt-1 max-w-2xl leading-relaxed">
-            Consolidate your entire order with Asian Enterprises. Sourcing electrical switchgear, cables, testing tools, and industrial hardware under one unified commercial quotation.
+            Consolidate your entire order with Gurudev Enterprise. Sourcing electrical switchgear, cables, testing tools, and industrial hardware under one unified commercial quotation.
           </p>
         </div>
         <div className="flex items-center gap-3 shrink-0">
           <Link
             href="/boq-upload"
-            className="px-5 py-2.5 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
+            className="px-5 py-2.5 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-xs"
           >
             Upload Project BOQ
           </Link>

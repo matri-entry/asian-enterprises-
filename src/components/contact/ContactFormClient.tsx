@@ -60,7 +60,7 @@ export default function ContactFormClient() {
           Message Received Successfully
         </h3>
         <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
-          Thank you for contacting Asian Enterprises. A member of our commercial desk in Bengaluru or Jaipur will review your inquiry and follow up shortly.
+          Thank you for contacting Gurudev Enterprise. A member of our commercial desk in Bengaluru will review your inquiry and follow up shortly.
         </p>
         <button
           onClick={() => {
@@ -107,7 +107,7 @@ export default function ContactFormClient() {
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
             placeholder="e.g. Anand Pillai"
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
 
@@ -120,7 +120,7 @@ export default function ContactFormClient() {
             value={formData.companyName}
             onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
             placeholder="e.g. Pillai Electricals & Panels"
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
 
@@ -134,7 +134,7 @@ export default function ContactFormClient() {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="e.g. anand@pillaipanels.in"
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
 
@@ -148,7 +148,7 @@ export default function ContactFormClient() {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="e.g. 9876543210"
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
 
@@ -160,8 +160,8 @@ export default function ContactFormClient() {
             type="text"
             value={formData.city}
             onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-            placeholder="e.g. Bengaluru / Jaipur"
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            placeholder="e.g. Bengaluru / Pune"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           />
         </div>
 
@@ -172,7 +172,7 @@ export default function ContactFormClient() {
           <select
             value={formData.department}
             onChange={(e) => setFormData({ ...formData, department: e.target.value })}
-            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+            className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
           >
             <option value="Sales & Quotations">Sales & Quotations</option>
             <option value="Bulk BOQ / Project Sourcing">Bulk BOQ / Project Sourcing</option>
@@ -192,7 +192,7 @@ export default function ContactFormClient() {
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
           placeholder="Please describe your product requirement, specifications, or inquiry details."
-          className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#0B2D5B]"
+          className="w-full px-3.5 py-2 rounded-md border border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-[#102B46]"
         />
       </div>
 
@@ -210,7 +210,7 @@ export default function ContactFormClient() {
         <button
           type="submit"
           disabled={submitting}
-          className="w-full sm:w-auto px-6 py-2.5 bg-[#0B2D5B] hover:bg-blue-900 disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 shadow-xs"
+          className="w-full sm:w-auto px-6 py-2.5 bg-[#102B46] hover:bg-blue-900 disabled:bg-slate-300 text-white font-bold text-xs uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 shadow-xs"
         >
           {submitting ? (
             <>

@@ -18,9 +18,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0B2D5B] text-slate-300 text-sm border-t border-slate-800">
+    <footer className="bg-[#102B46] text-slate-300 text-sm border-t border-slate-800">
       {/* Upper Pre-Footer Callout */}
-      <div className="bg-[#082142] py-8 border-b border-blue-900/60">
+      <div className="bg-[#0b1e32] py-8 border-b border-blue-900/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
@@ -40,7 +40,7 @@ export default function Footer() {
               </Link>
               <Link
                 href="/rfq"
-                className="px-5 py-2.5 bg-[#F05A28] hover:bg-[#D94819] text-white font-bold text-xs uppercase tracking-wide rounded-md transition-colors shadow-sm"
+                className="px-5 py-2.5 bg-[#F28C28] hover:bg-[#D9771E] text-white font-bold text-xs uppercase tracking-wide rounded-md transition-colors shadow-sm"
               >
                 Request a Quote
               </Link>
@@ -54,19 +54,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Col 1: Corporate Profile */}
           <div className="lg:col-span-2">
-            <div className="bg-white p-3.5 rounded-md inline-block mb-4">
-              <div className="relative h-10 w-44">
-                <Image 
-                  src="/images/logo.png" 
-                  alt="Asian Enterprises Logo" 
-                  fill 
-                  className="object-contain object-left" 
+            <div className="bg-white p-3 rounded-md inline-block mb-4">
+              <div className="relative h-10 w-48">
+                <Image
+                  src="/images/logo.png"
+                  alt="Gurudev Enterprise Logo"
+                  fill
+                  className="object-contain object-left"
                 />
               </div>
             </div>
             
             <p className="text-slate-300 text-xs leading-relaxed max-w-sm mb-4">
-              <strong className="text-white">ASIAN ENTERPRISES</strong> is a premier B2B industrial trading, sourcing, and procurement company supplying electrical infrastructure, automation panels, cables, safety gear, and industrial hardware to factories, panel builders, OEMs, and EPC contractors across India.
+              <strong className="text-white">GURUDEV ENTERPRISE</strong> is a premier B2B industrial electrical equipment and MRO supplier, providing electrical infrastructure, automation panels, cables, switchgear, safety gear, and industrial hardware to factories, panel builders, OEMs, and EPC contractors across India.
             </p>
 
             <div className="bg-blue-950/60 p-3.5 rounded border border-blue-900/60 text-xs space-y-1.5 max-w-sm">
@@ -101,7 +101,7 @@ export default function Footer() {
               <li>
                 <Link 
                   href="/products" 
-                  className="text-[#F05A28] hover:text-orange-400 font-semibold inline-block pt-1"
+                  className="text-[#F28C28] hover:text-orange-400 font-semibold inline-block pt-1"
                 >
                   View All 12 Categories &rarr;
                 </Link>
@@ -155,12 +155,12 @@ export default function Footer() {
           {/* Col 4: Verified Locations & Contact */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-white mb-4 border-b border-blue-800 pb-2">
-              Verified Offices
+              Corporate Office
             </h4>
             <div className="space-y-3.5 text-xs">
               <div>
                 <span className="font-bold text-white flex items-center gap-1 text-[11px]">
-                  <Building2 className="w-3.5 h-3.5 text-[#F05A28]" />
+                  <Building2 className="w-3.5 h-3.5 text-[#F28C28]" />
                   Main Operations (Bengaluru)
                 </span>
                 <p className="text-slate-400 text-[11px] mt-0.5 leading-relaxed">
@@ -170,34 +170,27 @@ export default function Footer() {
 
               <div>
                 <span className="font-bold text-white flex items-center gap-1 text-[11px]">
-                  <Building2 className="w-3.5 h-3.5 text-[#F05A28]" />
-                  Regional Sales (Jaipur)
+                  <MapPin className="w-3.5 h-3.5 text-[#0B9295]" />
+                  Pan-India Supply & Dispatch
                 </span>
-                <p className="text-slate-400 text-[11px] mt-0.5">
-                  Jaipur, Rajasthan &bull; Serving Northern/Western corridors
+                <p className="text-slate-400 text-[11px] mt-0.5 leading-relaxed">
+                  Fast freight dispatch to industrial plants and project sites across all Indian states.
                 </p>
               </div>
 
               <div className="pt-2 border-t border-blue-900/60 space-y-1.5">
                 <a 
                   href={`tel:${COMPANY.contact.primaryPhone}`} 
-                  className="flex items-center gap-2 text-white hover:text-[#F05A28] font-semibold"
+                  className="flex items-center gap-2 text-white hover:text-[#F28C28] font-semibold"
                 >
-                  <Phone className="w-3.5 h-3.5 text-[#F05A28]" />
+                  <Phone className="w-3.5 h-3.5 text-[#F28C28]" />
                   <span>{COMPANY.contact.primaryPhoneDisplay}</span>
-                </a>
-                <a 
-                  href={`tel:${COMPANY.contact.secondaryPhone}`} 
-                  className="flex items-center gap-2 text-slate-300 hover:text-white text-[11px]"
-                >
-                  <Phone className="w-3 h-3 text-slate-400" />
-                  <span>{COMPANY.contact.secondaryPhoneDisplay}</span>
                 </a>
                 <a 
                   href={`mailto:${COMPANY.contact.email}`} 
                   className="flex items-center gap-2 text-slate-300 hover:text-white text-[11px]"
                 >
-                  <Mail className="w-3 h-3 text-[#F05A28]" />
+                  <Mail className="w-3.5 h-3.5 text-[#F28C28]" />
                   <span>{COMPANY.contact.email}</span>
                 </a>
               </div>
@@ -208,7 +201,7 @@ export default function Footer() {
         {/* Pan-India Supply Notice */}
         <div className="mt-10 pt-6 border-t border-blue-900/60 bg-blue-950/30 p-4 rounded-md">
           <p className="text-xs text-slate-400 leading-relaxed">
-            <strong className="text-slate-200">Pan-India Industrial Sourcing & Logistics:</strong> Asian Enterprises coordinates supply, freight transit, and order dispatch across all major industrial clusters in India. Commercial pricing, brand availability, freight terms, and delivery schedules are confirmed through written quotation prior to order finalization.
+            <strong className="text-slate-200">Pan-India Industrial Sourcing & Logistics:</strong> Gurudev Enterprise coordinates supply, freight transit, and order dispatch across all major industrial clusters in India. Commercial pricing, brand availability, freight terms, and delivery schedules are confirmed through written quotation prior to order finalization.
           </p>
         </div>
 
@@ -237,7 +230,7 @@ export default function Footer() {
           </div>
 
           <p className="text-[11px] text-slate-500">
-            &copy; 2026 ASIAN ENTERPRISES. All Rights Reserved.
+            &copy; 2026 GURUDEV ENTERPRISE. All Rights Reserved.
           </p>
         </div>
       </div>
